@@ -1,0 +1,16 @@
+22-Oct-2026 02:59:34 | INFO    | Your Klayout version is: KLayout 0.30.11
+22-Oct-2026 02:59:34 | INFO    | Running SG13CMOS5L LVS checks on design /home/designer/shared/POPCONUT/COMPLETE/COMPLETE_PROYECT_FIG.gds on cell COMPLETE_PROYECT_FIG
+22-Oct-2026 03:00:05 | INFO    | ==============================================================================
+22-Oct-2026 03:00:05 | INFO    | Important Summary
+22-Oct-2026 03:00:05 | INFO    | +------------------+-----------------------------------------------------------------+
+22-Oct-2026 03:00:05 | INFO    | | Status           | PASS                                                            |
+22-Oct-2026 03:00:05 | INFO    | | Mode             | COMPARE                                                         |
+22-Oct-2026 03:00:05 | INFO    | | Outcome          | Comparison mode: PASS (netlists match).                         |
+22-Oct-2026 03:00:05 | INFO    | | Layout           | COMPLETE_PROYECT_FIG.gds                                        |
+22-Oct-2026 03:00:05 | INFO    | | Top Cell         | COMPLETE_PROYECT_FIG                                            |
+22-Oct-2026 03:00:05 | INFO    | | Results Dir      | /home/designer/lvs_run_COMPLETE_PROYECT_FIG_2026_10_22_02_59_33 |
+22-Oct-2026 03:00:05 | INFO    | | Warnings         | 0                                                               |
+22-Oct-2026 03:00:05 | INFO    | | Errors           | 0                                                               |
+22-Oct-2026 03:00:05 | INFO    | | Run Time (s)     | 31.453                                                          |
+22-Oct-2026 03:00:05 | INFO    | +------------------+-----------------------------------------------------------------+
+22-Oct-2026 03:00:05 | INFO    | ==============================================================================

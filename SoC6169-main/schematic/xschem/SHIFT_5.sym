@@ -1,0 +1,45 @@
+v {xschem version=3.4.6 file_version=1.2}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+P 4 5 -100 -70 100 -70 100 70 -100 70 -100 -70 {}
+L 4 -120 -50 -100 -50 {}
+L 4 -120 -30 -100 -30 {}
+L 4 -120 -10 -100 -10 {}
+L 4 -120 10 -100 10 {}
+L 4 -120 30 -100 30 {}
+L 4 -120 50 -100 50 {}
+L 4 100 -50 120 -50 {}
+L 4 100 -30 120 -30 {}
+L 4 100 -10 120 -10 {}
+L 4 100 10 120 10 {}
+L 4 100 30 120 30 {}
+B 5 -122.5 -52.5 -117.5 -47.5 {name=VGND dir=inout}
+B 5 -122.5 -32.5 -117.5 -27.5 {name=VPWR dir=inout}
+B 5 117.5 -52.5 122.5 -47.5 {name=addr[0] dir=out}
+B 5 117.5 -32.5 122.5 -27.5 {name=addr[1] dir=out}
+B 5 117.5 -12.5 122.5 -7.5 {name=addr[2] dir=out}
+B 5 117.5 7.5 122.5 12.5 {name=addr[3] dir=out}
+B 5 117.5 27.5 122.5 32.5 {name=addr[4] dir=out}
+B 5 -122.5 -12.5 -117.5 -7.5 {name=addr_shift_enable dir=in}
+B 5 -122.5 7.5 -117.5 12.5 {name=clk dir=in}
+B 5 -122.5 27.5 -117.5 32.5 {name=reset dir=in}
+B 5 -122.5 47.5 -117.5 52.5 {name=serial_in_addr dir=in}
+T {VGND} -95 -56 0 0 0.2 0.2 {}
+T {VPWR} -95 -36 0 0 0.2 0.2 {}
+T {addr_shift_enable} -95 -16 0 0 0.2 0.2 {}
+T {clk} -95 4 0 0 0.2 0.2 {}
+T {reset} -95 24 0 0 0.2 0.2 {}
+T {serial_in_addr} -95 44 0 0 0.2 0.2 {}
+T {addr[0]} 95 -56 0 1 0.2 0.2 {}
+T {addr[1]} 95 -36 0 1 0.2 0.2 {}
+T {addr[2]} 95 -16 0 1 0.2 0.2 {}
+T {addr[3]} 95 4 0 1 0.2 0.2 {}
+T {addr[4]} 95 24 0 1 0.2 0.2 {}
+T {@symname} -100 -105 0 0 0.3 0.3 {}
+T {@name} -100 -88 0 0 0.2 0.2 {}

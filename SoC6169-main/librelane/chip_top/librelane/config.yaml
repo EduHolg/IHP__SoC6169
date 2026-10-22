@@ -1,0 +1,152 @@
+# CAM chip (IMNE-USFQ) - IHP SG13CMOS5L
+# Based on IHP-GmbH/ihp-sg13cmos5l-librelane-template (Chip flow: pad ring + core)
+# The CAM core enters as a hard macro: COMPLETE_PROYECT_FIG (415.39 x 367.22 um)
+meta:
+  version: 3
+  flow: Chip
+  substituting_steps:
+
+    # Magic only flags the IHP pads/bondpads (0 errors in the core); KLayout is the reference DRC
+    Checker.MagicDRC: null
+
+    # Magic reports some overlaps which can be ignored
+    Checker.IllegalOverlap: null
+
+    # Disable KLayout antenna check (template default; re-enable before tape-out)
+    KLayout.Antenna: null
+    Checker.KLayoutAntenna: null
+
+    # Save time
+    OpenROAD.IRDropReport: null
+
+DESIGN_NAME: chip_top
+VERILOG_FILES:
+- dir::../src/chip_top.sv
+- dir::../src/chip_core.sv
+
+VERILOG_DEFINES: [FUNCTIONAL]
+
+PRIMARY_GDSII_STREAMOUT_TOOL: klayout
+
+# ---------------------------------------------------------------
+# Pads: each pad on the same side as its pin on the macro
+#   West: CLK, reset, EN_* (5)          North: VEVAL_IN, serial_in_data, IOVDD x2, IOVSS (5)
+#   East: OUTPUT, VDD x2, VSS (4)       South: serial_in_addr, VDD, VSS, IOVDD, IOVSS (5)
+#   With a 1.2 mm die the PadRing only accepts 1, 3, 4, 5 or 7 pads per side (2 and 6 fail)
+#   Extra VDD/IOVDD pads raise the GatPoly density above 15 % (GFil.g)
+# ---------------------------------------------------------------
+PAD_WEST: [
+    "inputs\\[2\\].input_pad",
+    "inputs\\[1\\].input_pad",
+    "inputs\\[0\\].input_pad",
+    rst_n_pad,
+    clk_pad
+]
+
+PAD_NORTH: [
+    "analogs\\[0\\].analog_pad",
+    "inputs\\[4\\].input_pad",
+    "iovdd_pads\\[0\\].iovdd_pad",
+    "iovss_pads\\[0\\].iovss_pad",
+    "iovdd_pads\\[2\\].iovdd_pad"
+]
+
+PAD_EAST: [
+    "outputs\\[0\\].output_pad",
+    "vdd_pads\\[0\\].vdd_pad",
+    "vss_pads\\[0\\].vss_pad",
+    "vdd_pads\\[2\\].vdd_pad"
+]
+
+PAD_SOUTH: [
+    "inputs\\[3\\].input_pad",
+    "vdd_pads\\[1\\].vdd_pad",
+    "vss_pads\\[1\\].vss_pad",
+    "iovdd_pads\\[1\\].iovdd_pad",
+    "iovss_pads\\[1\\].iovss_pad"
+]
+
+# SDC files
+PNR_SDC_FILE: dir::chip_top.sdc
+SIGNOFF_SDC_FILE: dir::chip_top.sdc
+FALLBACK_SDC: dir::chip_top.sdc
+
+# Power / ground nets
+VDD_NETS:
+- VDD
+GND_NETS:
+- VSS
+
+# Clock: 100 MHz
+CLOCK_PORT: clk_PAD
+CLOCK_NET: clk_pad/p2c
+CLOCK_PERIOD: 10
+
+# Floorplanning: die 1.2 x 1.2 mm = 1.44 mm2
+#   0-70 seal ring | 70-140 bondpads | 140-320 I/O cells | 320-365 PDN ring | core 470 x 470 um
+FP_SIZING: absolute
+DIE_AREA: [0, 0, 1200, 1200]
+CORE_AREA: [365, 365, 835, 835]
+
+PL_TARGET_DENSITY_PCT: 10
+GRT_ALLOW_CONGESTION: true
+
+# PDN
+PDN_CORE_RING: True
+# Horizontal straps (TopMetal1) every 25 um: they cross all Metal4 VDD/VSS bars
+# of the macro (>= 30 um tall) and get vias to them
+PDN_HPITCH: 25
+
+PAD_BONDPAD_NAME: bondpad_70x70_5L
+
+# Bondpad 4 um further out than the PDK default (5.0, -70.0). The bondpad carries a
+# 4 um TopMetal1 bridge towards the I/O cell: TM1 exit = 4 + 3 = 7 um
+# (Pad.fR_TM1) and Passiv opening 12.1 um away from the I/O-cell Activ (Pad.d1R >= 11.2)
+PAD_BONDPAD_OFFSETS:
+  "sg13cmos5l_IOPad*": [5.0, -74.0]
+
+EXTRA_GDS:
+- dir::../ip/bondpad_70x70/gds/bondpad_70x70_5L.gds
+
+EXTRA_LEFS:
+- dir::../ip/bondpad_70x70/lef/bondpad_70x70_5L.lef
+
+IGNORE_DISCONNECTED_MODULES:
+- bondpad_70x70_5L
+
+PDN_CORE_RING_VWIDTH: 15
+PDN_CORE_RING_HWIDTH: 15
+PDN_CORE_RING_VSPACING: 5
+PDN_CORE_RING_HSPACING: 5
+
+PDN_CORE_RING_CONNECT_TO_PADS: True
+PDN_ENABLE_PINS: False
+
+# Because we have multiple power pads for one power domain
+MAGIC_EXT_UNIQUE: notopports
+
+# 5L PDK fix: the antenna cell is declared without a pin
+DIODE_CELL: sg13cmos5l_antennanp/A
+
+# ---------------------------------------------------------------
+# Hard macro: CAM core
+# ---------------------------------------------------------------
+MACROS:
+  COMPLETE_PROYECT_FIG:
+    gds:
+      - dir::../ip/cam_core/gds/COMPLETE_PROYECT_FIG.gds
+    lef:
+      - dir::../ip/cam_core/lef/COMPLETE_PROYECT_FIG.lef
+    vh:
+      - dir::../ip/cam_core/vh/COMPLETE_PROYECT_FIG.v
+    instances:
+      i_chip_core.cam_core:
+        # Grid-aligned: x on 0.48 um sites; y chosen so the 10 um halo cuts the rows
+        # at VSS (not NWell) boundaries top and bottom -> avoids NW.d at the corners
+        location: [392.56, 417.41]
+        orientation: N
+
+PDN_MACRO_CONNECTIONS:
+- "i_chip_core.cam_core VDD VSS VDD VSS"
+
+# Full-flow DRC (recommended rules included): must be 0, otherwise the flow stops.

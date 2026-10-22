@@ -1,0 +1,2 @@
+simulator lang=spectre
+myOpts options duplicate_subckt=warning

@@ -1,0 +1,57 @@
+v {xschem version=3.4.6 file_version=1.2}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+P 4 5 -120 -90 120 -90 120 90 -120 90 -120 -90 {}
+L 4 -140 -70 -120 -70 {}
+L 4 -140 -50 -120 -50 {}
+L 4 -140 -30 -120 -30 {}
+L 4 -140 -10 -120 -10 {}
+L 4 -140 10 -120 10 {}
+L 4 -140 30 -120 30 {}
+L 4 -140 50 -120 50 {}
+L 4 120 -70 140 -70 {}
+L 4 120 -50 140 -50 {}
+L 4 120 -30 140 -30 {}
+L 4 120 -10 140 -10 {}
+L 4 120 10 140 10 {}
+L 4 120 30 140 30 {}
+L 4 120 50 140 50 {}
+L 4 120 70 140 70 {}
+B 5 -142.5 -72.5 -137.5 -67.5 {name=EN_REFERENCE dir=in}
+B 5 -142.5 -52.5 -137.5 -47.5 {name=EN_SEARCH dir=in}
+B 5 -142.5 -32.5 -137.5 -27.5 {name=EN_WRITE dir=in}
+B 5 137.5 -72.5 142.5 -67.5 {name=PC dir=out}
+B 5 137.5 -52.5 142.5 -47.5 {name=VEVAL dir=out}
+B 5 -142.5 -12.5 -137.5 -7.5 {name=clk dir=in}
+B 5 137.5 -32.5 142.5 -27.5 {name=output_enable dir=out}
+B 5 -142.5 7.5 -137.5 12.5 {name=reset dir=in}
+B 5 137.5 -12.5 142.5 -7.5 {name=REF_SEL dir=out}
+B 5 137.5 7.5 142.5 12.5 {name=WL_REF dir=out}
+B 5 137.5 27.5 142.5 32.5 {name=addr_shift_enable dir=out}
+B 5 137.5 47.5 142.5 52.5 {name=decoder_enable dir=out}
+B 5 137.5 67.5 142.5 72.5 {name=shift_enable dir=out}
+B 5 -142.5 27.5 -137.5 32.5 {name=VGND dir=inout}
+B 5 -142.5 47.5 -137.5 52.5 {name=VPWR dir=inout}
+T {EN_REFERENCE} -115 -76 0 0 0.2 0.2 {}
+T {EN_SEARCH} -115 -56 0 0 0.2 0.2 {}
+T {EN_WRITE} -115 -36 0 0 0.2 0.2 {}
+T {clk} -115 -16 0 0 0.2 0.2 {}
+T {reset} -115 4 0 0 0.2 0.2 {}
+T {VGND} -115 24 0 0 0.2 0.2 {}
+T {VPWR} -115 44 0 0 0.2 0.2 {}
+T {PC} 115 -76 0 1 0.2 0.2 {}
+T {VEVAL} 115 -56 0 1 0.2 0.2 {}
+T {output_enable} 115 -36 0 1 0.2 0.2 {}
+T {REF_SEL} 115 -16 0 1 0.2 0.2 {}
+T {WL_REF} 115 4 0 1 0.2 0.2 {}
+T {addr_shift_enable} 115 24 0 1 0.2 0.2 {}
+T {decoder_enable} 115 44 0 1 0.2 0.2 {}
+T {shift_enable} 115 64 0 1 0.2 0.2 {}
+T {@symname} -120 -125 0 0 0.3 0.3 {}
+T {@name} -120 -108 0 0 0.2 0.2 {}

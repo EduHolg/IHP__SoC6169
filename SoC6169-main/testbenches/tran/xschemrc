@@ -1,0 +1,2 @@
+# xschemrc for the testbenches: loads the IHP PDK + ../../schematic/xschem
+source [file dirname [file normalize [info script]]]/../../schematic/xschem/xschemrc

@@ -1,0 +1,557 @@
+Netgen 1.5.133 compiled on Thu Dec  1 22:32:11 UTC 2022
+Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Reading netlist file COMPLETE_PROYECT_FIG_original.spice
+Call to undefined subcircuit CAM_CONTROL
+Creating placeholder cell definition.
+Call to undefined subcircuit REFERENCE_MUX
+Creating placeholder cell definition.
+Call to undefined subcircuit decoder_5to32
+Creating placeholder cell definition.
+Call to undefined subcircuit shift_register_32
+Creating placeholder cell definition.
+Call to undefined subcircuit Xnor
+Creating placeholder cell definition.
+Call to undefined subcircuit OUTPUT
+Creating placeholder cell definition.
+Call to undefined subcircuit ANALOG_FIGURE
+Creating placeholder cell definition.
+Call to undefined subcircuit SHIFT_5
+Creating placeholder cell definition.
+Call to undefined subcircuit ctl_sg13g2_and2_1
+Creating placeholder cell definition.
+Call to undefined subcircuit ctl_sg13g2_nand2b_1
+Creating placeholder cell definition.
+Call to undefined subcircuit ctl_sg13g2_inv_1
+Creating placeholder cell definition.
+Call to undefined subcircuit ctl_sg13g2_buf_1
+Creating placeholder cell definition.
+Call to undefined subcircuit ctl_sg13g2_dlygate4sd3_1
+Creating placeholder cell definition.
+Call to undefined subcircuit ctl_sg13g2_nor2_1
+Creating placeholder cell definition.
+Call to undefined subcircuit ctl_sg13g2_dfrbpq_1
+Creating placeholder cell definition.
+Call to undefined subcircuit ctl_sg13g2_nand4_1
+Creating placeholder cell definition.
+Call to undefined subcircuit ctl_sg13g2_a221oi_1
+Creating placeholder cell definition.
+Call to undefined subcircuit ctl_sg13g2_a21o_1
+Creating placeholder cell definition.
+Call to undefined subcircuit ctl_sg13g2_o21ai_1
+Creating placeholder cell definition.
+Call to undefined subcircuit ctl_sg13g2_nor4_1
+Creating placeholder cell definition.
+Call to undefined subcircuit ctl_sg13g2_decap_8
+Creating placeholder cell definition.
+Call to undefined subcircuit ctl_sg13g2_or2_1
+Creating placeholder cell definition.
+Call to undefined subcircuit ctl_sg13g2_a22oi_1
+Creating placeholder cell definition.
+Call to undefined subcircuit ctl_sg13g2_a21oi_1
+Creating placeholder cell definition.
+Call to undefined subcircuit ctl_sg13g2_decap_4
+Creating placeholder cell definition.
+Call to undefined subcircuit ctl_sg13g2_nor3_1
+Creating placeholder cell definition.
+Call to undefined subcircuit ctl_sg13g2_and3_1
+Creating placeholder cell definition.
+Call to undefined subcircuit ctl_sg13g2_mux2_1
+Creating placeholder cell definition.
+Call to undefined subcircuit ctl_sg13g2_nand2_1
+Creating placeholder cell definition.
+Call to undefined subcircuit ctl_sg13g2_xor2_1
+Creating placeholder cell definition.
+Call to undefined subcircuit ctl_sg13g2_nor2b_1
+Creating placeholder cell definition.
+Call to undefined subcircuit ctl_sg13g2_nand3b_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13g2_buf_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13g2_nor2b_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13g2_or2_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13g2_nand2b_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13g2_nor3_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13g2_nor2_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13g2_or3_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13g2_nor4_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13g2_nand3_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13g2_decap_8
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13g2_decap_4
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13g2_nand3b_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13g2_inv_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13g2_dfrbpq_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13g2_tiehi
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13g2_dlygate4sd3_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13g2_xnor2_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13g2_a221oi_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13g2_a22oi_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13g2_a21oi_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13g2_and2_1
+Creating placeholder cell definition.
+Reading netlist file COMPLETE_PROYECT_FIG_xschem_lvs.spice
+Call to undefined subcircuit CAM_CONTROL
+Creating placeholder cell definition.
+Call to undefined subcircuit REFERENCE_MUX
+Creating placeholder cell definition.
+Call to undefined subcircuit decoder_5to32
+Creating placeholder cell definition.
+Call to undefined subcircuit shift_register_32
+Creating placeholder cell definition.
+Call to undefined subcircuit Xnor
+Creating placeholder cell definition.
+Call to undefined subcircuit OUTPUT
+Creating placeholder cell definition.
+Call to undefined subcircuit ANALOG_FIGURE
+Creating placeholder cell definition.
+Call to undefined subcircuit SHIFT_5
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13cmos5l_and2_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13cmos5l_nand2b_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13cmos5l_inv_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13cmos5l_buf_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13cmos5l_dlygate4sd3_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13cmos5l_nor2_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13cmos5l_dfrbpq_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13cmos5l_nand4_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13cmos5l_a221oi_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13cmos5l_a21o_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13cmos5l_o21ai_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13cmos5l_nor4_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13cmos5l_decap_8
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13cmos5l_or2_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13cmos5l_a22oi_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13cmos5l_a21oi_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13cmos5l_decap_4
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13cmos5l_nor3_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13cmos5l_and3_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13cmos5l_mux2_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13cmos5l_nand2_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13cmos5l_xor2_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13cmos5l_nor2b_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13cmos5l_nand3b_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13cmos5l_or3_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13cmos5l_nand3_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13cmos5l_tiehi
+Creating placeholder cell definition.
+Call to undefined subcircuit INV
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13cmos5l_xnor2_1
+Creating placeholder cell definition.
+Call to undefined subcircuit reference_complete
+Creating placeholder cell definition.
+Call to undefined subcircuit ARRAY_32x32
+Creating placeholder cell definition.
+Call to undefined subcircuit PART_SENS_COMPARATOR
+Creating placeholder cell definition.
+Call to undefined subcircuit BUFFER
+Creating placeholder cell definition.
+Call to undefined subcircuit WORD_32bits
+Creating placeholder cell definition.
+Call to undefined subcircuit inverter_sens
+Creating placeholder cell definition.
+Call to undefined subcircuit COMPARATOR_NEWBUFFER_64x32
+Creating placeholder cell definition.
+Call to undefined subcircuit CELL
+Creating placeholder cell definition.
+Call to undefined subcircuit flip_flop
+Creating placeholder cell definition.
+Reading setup file $PDK_ROOT/$PDK/libs.tech/netgen/ihp-sg13cmos5l_setup.tcl
+No property as found for device sg13_lv_pmos
+No property ad found for device sg13_lv_pmos
+No property ps found for device sg13_lv_pmos
+No property pd found for device sg13_lv_pmos
+No property as found for device sg13_lv_pmos
+No property ad found for device sg13_lv_pmos
+No property ps found for device sg13_lv_pmos
+No property pd found for device sg13_lv_pmos
+No property as found for device sg13_lv_nmos
+No property ad found for device sg13_lv_nmos
+No property ps found for device sg13_lv_nmos
+No property pd found for device sg13_lv_nmos
+No property as found for device sg13_lv_nmos
+No property ad found for device sg13_lv_nmos
+No property ps found for device sg13_lv_nmos
+No property pd found for device sg13_lv_nmos
+No such pin 1 in model sg13_lv_nmos
+Unable to permute model sg13_lv_nmos pins 1, 3.
+No property as found for device sg13_lv_nmos
+No property ad found for device sg13_lv_nmos
+No property pd found for device sg13_lv_nmos
+No property ps found for device sg13_lv_nmos
+No property trise found for device sg13_lv_nmos
+No property z1 found for device sg13_lv_nmos
+No property z2 found for device sg13_lv_nmos
+No property wmin found for device sg13_lv_nmos
+No property rfmode found for device sg13_lv_nmos
+No property pre_layout found for device sg13_lv_nmos
+No such pin 1 in model sg13_lv_nmos
+Unable to permute model sg13_lv_nmos pins 1, 3.
+No property as found for device sg13_lv_nmos
+No property ad found for device sg13_lv_nmos
+No property pd found for device sg13_lv_nmos
+No property ps found for device sg13_lv_nmos
+No property trise found for device sg13_lv_nmos
+No property z1 found for device sg13_lv_nmos
+No property z2 found for device sg13_lv_nmos
+No property wmin found for device sg13_lv_nmos
+No property rfmode found for device sg13_lv_nmos
+No property pre_layout found for device sg13_lv_nmos
+No such pin 1 in model sg13_lv_pmos
+Unable to permute model sg13_lv_pmos pins 1, 3.
+No property as found for device sg13_lv_pmos
+No property ad found for device sg13_lv_pmos
+No property pd found for device sg13_lv_pmos
+No property ps found for device sg13_lv_pmos
+No property trise found for device sg13_lv_pmos
+No property z1 found for device sg13_lv_pmos
+No property z2 found for device sg13_lv_pmos
+No property wmin found for device sg13_lv_pmos
+No property rfmode found for device sg13_lv_pmos
+No property pre_layout found for device sg13_lv_pmos
+No such pin 1 in model sg13_lv_pmos
+Unable to permute model sg13_lv_pmos pins 1, 3.
+No property as found for device sg13_lv_pmos
+No property ad found for device sg13_lv_pmos
+No property pd found for device sg13_lv_pmos
+No property ps found for device sg13_lv_pmos
+No property trise found for device sg13_lv_pmos
+No property z1 found for device sg13_lv_pmos
+No property z2 found for device sg13_lv_pmos
+No property wmin found for device sg13_lv_pmos
+No property rfmode found for device sg13_lv_pmos
+No property pre_layout found for device sg13_lv_pmos
+Comparison output logged to file comp_v2.out
+Logging to file "comp_v2.out" enabled
+Contents of circuit 1:  Circuit: 'INV'
+Circuit INV contains 2 device instances.
+  Class: sg13_lv_pmos          instances:   1
+  Class: sg13_lv_nmos          instances:   1
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'INV'
+Circuit INV contains 2 device instances.
+  Class: sg13_lv_pmos          instances:   1
+  Class: sg13_lv_nmos          instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+Netlists match uniquely.
+Contents of circuit 1:  Circuit: 'CELL'
+Circuit CELL contains 8 device instances.
+  Class: INV                   instances:   2
+  Class: sg13_lv_nmos          instances:   6
+Circuit contains 11 nets.
+Contents of circuit 2:  Circuit: 'CELL'
+Circuit CELL contains 8 device instances.
+  Class: INV                   instances:   2
+  Class: sg13_lv_nmos          instances:   6
+Circuit contains 11 nets.
+
+Circuit 1 contains 8 devices, Circuit 2 contains 8 devices.
+Circuit 1 contains 11 nets,    Circuit 2 contains 11 nets.
+
+Circuits match with 5 symmetries.
+Netlists match uniquely.
+Circuits match correctly.
+Contents of circuit 1:  Circuit: 'flip_flop'
+Circuit flip_flop contains 15 device instances.
+  Class: sg13_lv_pmos          instances:   4
+  Class: INV                   instances:   7
+  Class: sg13_lv_nmos          instances:   4
+Circuit contains 13 nets.
+Contents of circuit 2:  Circuit: 'flip_flop'
+Circuit flip_flop contains 15 device instances.
+  Class: sg13_lv_pmos          instances:   4
+  Class: INV                   instances:   7
+  Class: sg13_lv_nmos          instances:   4
+Circuit contains 13 nets.
+
+Circuit 1 contains 15 devices, Circuit 2 contains 15 devices.
+Circuit 1 contains 13 nets,    Circuit 2 contains 13 nets.
+
+Netlists match uniquely.
+Contents of circuit 1:  Circuit: 'BUFFER'
+Circuit BUFFER contains 3 device instances.
+  Class: sg13_lv_pmos          instances:   1
+  Class: INV                   instances:   1
+  Class: sg13_lv_nmos          instances:   1
+Circuit contains 5 nets.
+Contents of circuit 2:  Circuit: 'BUFFER'
+Circuit BUFFER contains 3 device instances.
+  Class: sg13_lv_pmos          instances:   1
+  Class: INV                   instances:   1
+  Class: sg13_lv_nmos          instances:   1
+Circuit contains 5 nets.
+
+Circuit 1 contains 3 devices, Circuit 2 contains 3 devices.
+Circuit 1 contains 5 nets,    Circuit 2 contains 5 nets.
+
+Netlists match uniquely.
+Contents of circuit 1:  Circuit: 'WORD_32bits'
+Circuit WORD_32bits contains 33 device instances.
+  Class: sg13_lv_pmos          instances:   1
+  Class: CELL                  instances:  32
+Circuit contains 70 nets.
+Contents of circuit 2:  Circuit: 'WORD_32bits'
+Circuit WORD_32bits contains 33 device instances.
+  Class: sg13_lv_pmos          instances:   1
+  Class: CELL                  instances:  32
+Circuit contains 70 nets.
+
+Circuit 1 contains 33 devices, Circuit 2 contains 33 devices.
+Circuit 1 contains 70 nets,    Circuit 2 contains 70 nets.
+
+Circuits match with 3 symmetries.
+Netlists match uniquely.
+Circuits match correctly.
+Contents of circuit 1:  Circuit: 'inverter_sens'
+Circuit inverter_sens contains 32 device instances.
+  Class: INV                   instances:  32
+Circuit contains 66 nets.
+Contents of circuit 2:  Circuit: 'inverter_sens'
+Circuit inverter_sens contains 32 device instances.
+  Class: INV                   instances:  32
+Circuit contains 66 nets.
+
+Circuit 1 contains 32 devices, Circuit 2 contains 32 devices.
+Circuit 1 contains 66 nets,    Circuit 2 contains 66 nets.
+
+Circuits match with 3 symmetries.
+Netlists match uniquely.
+Circuits match correctly.
+Contents of circuit 1:  Circuit: 'COMPARATOR_NEWBUFFER_64x32'
+Circuit COMPARATOR_NEWBUFFER_64x32 contains 32 device instances.
+  Class: flip_flop             instances:  32
+Circuit contains 99 nets.
+Contents of circuit 2:  Circuit: 'COMPARATOR_NEWBUFFER_64x32'
+Circuit COMPARATOR_NEWBUFFER_64x32 contains 32 device instances.
+  Class: flip_flop             instances:  32
+Circuit contains 99 nets.
+
+Circuit 1 contains 32 devices, Circuit 2 contains 32 devices.
+Circuit 1 contains 99 nets,    Circuit 2 contains 99 nets.
+
+Circuits match with 4 symmetries.
+Netlists match uniquely.
+Circuits match correctly.
+Contents of circuit 1:  Circuit: 'reference_complete'
+Circuit reference_complete contains 3 device instances.
+  Class: BUFFER                instances:   1
+  Class: INV                   instances:   1
+  Class: WORD_32bits           instances:   1
+Circuit contains 72 nets.
+Contents of circuit 2:  Circuit: 'reference_complete'
+Circuit reference_complete contains 3 device instances.
+  Class: BUFFER                instances:   1
+  Class: INV                   instances:   1
+  Class: WORD_32bits           instances:   1
+Circuit contains 72 nets.
+
+Circuit 1 contains 3 devices, Circuit 2 contains 3 devices.
+Circuit 1 contains 72 nets,    Circuit 2 contains 72 nets.
+
+Netlists match uniquely.
+Contents of circuit 1:  Circuit: 'ARRAY_32x32'
+Circuit ARRAY_32x32 contains 32 device instances.
+  Class: WORD_32bits           instances:  32
+Circuit contains 132 nets.
+Contents of circuit 2:  Circuit: 'ARRAY_32x32'
+Circuit ARRAY_32x32 contains 32 device instances.
+  Class: WORD_32bits           instances:  32
+Circuit contains 132 nets.
+
+Circuit 1 contains 32 devices, Circuit 2 contains 32 devices.
+Circuit 1 contains 132 nets,    Circuit 2 contains 132 nets.
+
+Circuits match with 3 symmetries.
+Netlists match uniquely.
+Circuits match correctly.
+Contents of circuit 1:  Circuit: 'PART_SENS_COMPARATOR'
+Circuit PART_SENS_COMPARATOR contains 2 device instances.
+  Class: inverter_sens         instances:   1
+  Class: COMPARATOR_NEWBUFFER_64x32 instances:   1
+Circuit contains 99 nets.
+Contents of circuit 2:  Circuit: 'PART_SENS_COMPARATOR'
+Circuit PART_SENS_COMPARATOR contains 2 device instances.
+  Class: inverter_sens         instances:   1
+  Class: COMPARATOR_NEWBUFFER_64x32 instances:   1
+Circuit contains 99 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 99 nets,    Circuit 2 contains 99 nets.
+
+Netlists match uniquely.
+Contents of circuit 1:  Circuit: 'CAM_CONTROL'
+Circuit CAM_CONTROL contains 1344 device instances.
+  Class: sg13_lv_pmos          instances: 672
+  Class: sg13_lv_nmos          instances: 672
+Circuit contains 665 nets.
+Contents of circuit 2:  Circuit: 'CAM_CONTROL'
+Circuit CAM_CONTROL contains 0 device instances.
+Circuit contains 157 nets.
+
+Circuit CAM_CONTROL contains no devices.
+Contents of circuit 1:  Circuit: 'REFERENCE_MUX'
+Circuit REFERENCE_MUX contains 940 device instances.
+  Class: sg13_lv_pmos          instances: 470
+  Class: sg13_lv_nmos          instances: 470
+Circuit contains 537 nets.
+Contents of circuit 2:  Circuit: 'REFERENCE_MUX'
+Circuit REFERENCE_MUX contains 0 device instances.
+Circuit contains 270 nets.
+
+Circuit REFERENCE_MUX contains no devices.
+Contents of circuit 1:  Circuit: 'decoder_5to32'
+Circuit decoder_5to32 contains 456 device instances.
+  Class: sg13_lv_pmos          instances: 228
+  Class: sg13_lv_nmos          instances: 228
+Circuit contains 217 nets.
+Contents of circuit 2:  Circuit: 'decoder_5to32'
+Circuit decoder_5to32 contains 0 device instances.
+Circuit contains 94 nets.
+
+Circuit decoder_5to32 contains no devices.
+Contents of circuit 1:  Circuit: 'shift_register_32'
+Circuit shift_register_32 contains 2446 device instances.
+  Class: sg13_lv_pmos          instances: 1223
+  Class: sg13_lv_nmos          instances: 1223
+Circuit contains 1288 nets.
+Contents of circuit 2:  Circuit: 'shift_register_32'
+Circuit shift_register_32 contains 0 device instances.
+Circuit contains 328 nets.
+
+Circuit shift_register_32 contains no devices.
+Contents of circuit 1:  Circuit: 'Xnor'
+Circuit Xnor contains 5 device instances.
+  Class: sg13_lv_pmos          instances:   1
+  Class: INV                   instances:   3
+  Class: sg13_lv_nmos          instances:   1
+Circuit contains 8 nets.
+Contents of circuit 2:  Circuit: 'Xnor'
+Circuit Xnor contains 5 device instances.
+  Class: sg13_lv_pmos          instances:   1
+  Class: INV                   instances:   3
+  Class: sg13_lv_nmos          instances:   1
+Circuit contains 8 nets.
+
+Circuit 1 contains 5 devices, Circuit 2 contains 5 devices.
+Circuit 1 contains 8 nets,    Circuit 2 contains 8 nets.
+
+Netlists match uniquely.
+Contents of circuit 1:  Circuit: 'OUTPUT'
+Circuit OUTPUT contains 828 device instances.
+  Class: sg13_lv_pmos          instances: 414
+  Class: sg13_lv_nmos          instances: 414
+Circuit contains 432 nets.
+Contents of circuit 2:  Circuit: 'OUTPUT'
+Circuit OUTPUT contains 0 device instances.
+Circuit contains 167 nets.
+
+Circuit OUTPUT contains no devices.
+Contents of circuit 1:  Circuit: 'ANALOG_FIGURE'
+Circuit ANALOG_FIGURE contains 3 device instances.
+  Class: PART_SENS_COMPARATOR  instances:   1
+  Class: ARRAY_32x32           instances:   1
+  Class: reference_complete    instances:   1
+Circuit contains 230 nets.
+Contents of circuit 2:  Circuit: 'ANALOG_FIGURE'
+Circuit ANALOG_FIGURE contains 3 device instances.
+  Class: PART_SENS_COMPARATOR  instances:   1
+  Class: ARRAY_32x32           instances:   1
+  Class: reference_complete    instances:   1
+Circuit contains 230 nets.
+
+Circuit 1 contains 3 devices, Circuit 2 contains 3 devices.
+Circuit 1 contains 230 nets,    Circuit 2 contains 230 nets.
+
+Netlists match uniquely.
+Contents of circuit 1:  Circuit: 'SHIFT_5'
+Circuit SHIFT_5 contains 372 device instances.
+  Class: sg13_lv_pmos          instances: 186
+  Class: sg13_lv_nmos          instances: 186
+Circuit contains 192 nets.
+Contents of circuit 2:  Circuit: 'SHIFT_5'
+Circuit SHIFT_5 contains 0 device instances.
+Circuit contains 47 nets.
+
+Circuit SHIFT_5 contains no devices.
+Contents of circuit 1:  Circuit: 'COMPLETE_PROYECT_FIG'
+Circuit COMPLETE_PROYECT_FIG contains 10 device instances.
+  Class: shift_register_32     instances:   1
+  Class: REFERENCE_MUX         instances:   1
+  Class: Xnor                  instances:   1
+  Class: OUTPUT                instances:   1
+  Class: sg13_lv_pmos          instances:   1
+  Class: SHIFT_5               instances:   1
+  Class: decoder_5to32         instances:   1
+  Class: CAM_CONTROL           instances:   1
+  Class: ANALOG_FIGURE         instances:   1
+  Class: sg13_lv_nmos          instances:   1
+Circuit contains 218 nets.
+Contents of circuit 2:  Circuit: 'COMPLETE_PROYECT_FIG'
+Circuit COMPLETE_PROYECT_FIG contains 10 device instances.
+  Class: shift_register_32     instances:   1
+  Class: REFERENCE_MUX         instances:   1
+  Class: Xnor                  instances:   1
+  Class: OUTPUT                instances:   1
+  Class: sg13_lv_pmos          instances:   1
+  Class: SHIFT_5               instances:   1
+  Class: decoder_5to32         instances:   1
+  Class: CAM_CONTROL           instances:   1
+  Class: ANALOG_FIGURE         instances:   1
+  Class: sg13_lv_nmos          instances:   1
+Circuit contains 218 nets.
+
+Circuit 1 contains 10 devices, Circuit 2 contains 10 devices.
+Circuit 1 contains 218 nets,    Circuit 2 contains 218 nets.
+
+Netlists match uniquely.
+Result: Circuits match uniquely.
+Logging to file "comp_v2.out" disabled
+LVS Done.

@@ -1,0 +1,4 @@
+# xschemrc for the CAM project
+# Requires the IHP Open PDK: export PDK_ROOT=<path to IHP-Open-PDK> ; export PDK=ihp-sg13cmos5l
+source $env(PDK_ROOT)/$env(PDK)/libs.tech/xschem/xschemrc
+append XSCHEM_LIBRARY_PATH :[file dirname [file normalize [info script]]]

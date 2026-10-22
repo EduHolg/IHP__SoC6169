@@ -1,0 +1,1111 @@
+Flattening unmatched subcell ctl_sg13g2_and2_1 in circuit CAM_CONTROL (0)(5 instances)
+Flattening unmatched subcell ctl_sg13g2_nand2b_1 in circuit CAM_CONTROL (0)(7 instances)
+Flattening unmatched subcell ctl_sg13g2_inv_1 in circuit CAM_CONTROL (0)(29 instances)
+Flattening unmatched subcell ctl_sg13g2_buf_1 in circuit CAM_CONTROL (0)(17 instances)
+Flattening unmatched subcell ctl_sg13g2_dlygate4sd3_1 in circuit CAM_CONTROL (0)(16 instances)
+Flattening unmatched subcell ctl_sg13g2_nor2_1 in circuit CAM_CONTROL (0)(11 instances)
+Flattening unmatched subcell ctl_sg13g2_dfrbpq_1 in circuit CAM_CONTROL (0)(20 instances)
+Flattening unmatched subcell ctl_sg13g2_nand4_1 in circuit CAM_CONTROL (0)(1 instance)
+Flattening unmatched subcell ctl_sg13g2_a221oi_1 in circuit CAM_CONTROL (0)(1 instance)
+Flattening unmatched subcell ctl_sg13g2_a21o_1 in circuit CAM_CONTROL (0)(4 instances)
+Flattening unmatched subcell ctl_sg13g2_o21ai_1 in circuit CAM_CONTROL (0)(8 instances)
+Flattening unmatched subcell ctl_sg13g2_nor4_1 in circuit CAM_CONTROL (0)(1 instance)
+Flattening unmatched subcell ctl_sg13g2_decap_8 in circuit CAM_CONTROL (0)(6 instances)
+Flattening unmatched subcell ctl_sg13g2_or2_1 in circuit CAM_CONTROL (0)(1 instance)
+Flattening unmatched subcell ctl_sg13g2_a22oi_1 in circuit CAM_CONTROL (0)(1 instance)
+Flattening unmatched subcell ctl_sg13g2_a21oi_1 in circuit CAM_CONTROL (0)(6 instances)
+Flattening unmatched subcell ctl_sg13g2_decap_4 in circuit CAM_CONTROL (0)(4 instances)
+Flattening unmatched subcell ctl_sg13g2_nor3_1 in circuit CAM_CONTROL (0)(7 instances)
+Flattening unmatched subcell ctl_sg13g2_and3_1 in circuit CAM_CONTROL (0)(2 instances)
+Flattening unmatched subcell ctl_sg13g2_mux2_1 in circuit CAM_CONTROL (0)(2 instances)
+Flattening unmatched subcell ctl_sg13g2_nand2_1 in circuit CAM_CONTROL (0)(6 instances)
+Flattening unmatched subcell ctl_sg13g2_xor2_1 in circuit CAM_CONTROL (0)(2 instances)
+Flattening unmatched subcell ctl_sg13g2_nor2b_1 in circuit CAM_CONTROL (0)(2 instances)
+Flattening unmatched subcell ctl_sg13g2_nand3b_1 in circuit CAM_CONTROL (0)(1 instance)
+Flattening unmatched subcell sg13g2_buf_1 in circuit REFERENCE_MUX (0)(139 instances)
+Flattening unmatched subcell sg13g2_nor2b_1 in circuit REFERENCE_MUX (0)(32 instances)
+Flattening unmatched subcell sg13g2_or2_1 in circuit REFERENCE_MUX (0)(32 instances)
+Flattening unmatched subcell sg13g2_nand2b_1 in circuit decoder_5to32 (0)(3 instances)
+Flattening unmatched subcell sg13g2_nor3_1 in circuit decoder_5to32 (0)(14 instances)
+Flattening unmatched subcell sg13g2_buf_1 in circuit decoder_5to32 (0)(41 instances)
+Flattening unmatched subcell sg13g2_nor2_1 in circuit decoder_5to32 (0)(15 instances)
+Flattening unmatched subcell sg13g2_or3_1 in circuit decoder_5to32 (0)(1 instance)
+Flattening unmatched subcell sg13g2_nor4_1 in circuit decoder_5to32 (0)(3 instances)
+Flattening unmatched subcell sg13g2_nand3_1 in circuit decoder_5to32 (0)(2 instances)
+Flattening unmatched subcell sg13g2_decap_8 in circuit decoder_5to32 (0)(8 instances)
+Flattening unmatched subcell sg13g2_or2_1 in circuit decoder_5to32 (0)(1 instance)
+Flattening unmatched subcell sg13g2_decap_4 in circuit decoder_5to32 (0)(3 instances)
+Flattening unmatched subcell sg13g2_nand3b_1 in circuit decoder_5to32 (0)(5 instances)
+Flattening unmatched subcell sg13g2_inv_1 in circuit decoder_5to32 (0)(1 instance)
+Flattening unmatched subcell sg13g2_dfrbpq_1 in circuit shift_register_32 (0)(32 instances)
+Flattening unmatched subcell sg13g2_nor2_1 in circuit shift_register_32 (0)(32 instances)
+Flattening unmatched subcell sg13g2_inv_1 in circuit shift_register_32 (0)(32 instances)
+Flattening unmatched subcell sg13g2_buf_1 in circuit shift_register_32 (0)(83 instances)
+Flattening unmatched subcell sg13g2_tiehi in circuit shift_register_32 (0)(32 instances)
+Flattening unmatched subcell sg13g2_dlygate4sd3_1 in circuit shift_register_32 (0)(47 instances)
+Flattening unmatched subcell sg13g2_nor3_1 in circuit shift_register_32 (0)(32 instances)
+Flattening unmatched subcell sg13g2_nor2b_1 in circuit shift_register_32 (0)(32 instances)
+Flattening unmatched subcell sg13g2_decap_4 in circuit shift_register_32 (0)(1 instance)
+Flattening unmatched subcell sg13g2_decap_8 in circuit shift_register_32 (0)(2 instances)
+Flattening unmatched subcell sg13g2_nand2b_1 in circuit OUTPUT (0)(1 instance)
+Flattening unmatched subcell sg13g2_buf_1 in circuit OUTPUT (0)(38 instances)
+Flattening unmatched subcell sg13g2_inv_1 in circuit OUTPUT (0)(30 instances)
+Flattening unmatched subcell sg13g2_tiehi in circuit OUTPUT (0)(5 instances)
+Flattening unmatched subcell sg13g2_xnor2_1 in circuit OUTPUT (0)(1 instance)
+Flattening unmatched subcell sg13g2_a221oi_1 in circuit OUTPUT (0)(12 instances)
+Flattening unmatched subcell sg13g2_or3_1 in circuit OUTPUT (0)(2 instances)
+Flattening unmatched subcell sg13g2_dlygate4sd3_1 in circuit OUTPUT (0)(8 instances)
+Flattening unmatched subcell sg13g2_decap_8 in circuit OUTPUT (0)(13 instances)
+Flattening unmatched subcell sg13g2_a22oi_1 in circuit OUTPUT (0)(2 instances)
+Flattening unmatched subcell sg13g2_a21oi_1 in circuit OUTPUT (0)(7 instances)
+Flattening unmatched subcell sg13g2_decap_4 in circuit OUTPUT (0)(3 instances)
+Flattening unmatched subcell sg13g2_nor3_1 in circuit OUTPUT (0)(9 instances)
+Flattening unmatched subcell sg13g2_nor2b_1 in circuit OUTPUT (0)(2 instances)
+Flattening unmatched subcell sg13g2_dfrbpq_1 in circuit OUTPUT (0)(5 instances)
+Flattening unmatched subcell sg13g2_nor2_1 in circuit OUTPUT (0)(5 instances)
+Flattening unmatched subcell sg13g2_and2_1 in circuit OUTPUT (0)(3 instances)
+Flattening unmatched subcell sg13g2_buf_1 in circuit SHIFT_5 (0)(9 instances)
+Flattening unmatched subcell sg13g2_dlygate4sd3_1 in circuit SHIFT_5 (0)(7 instances)
+Flattening unmatched subcell sg13g2_decap_8 in circuit SHIFT_5 (0)(4 instances)
+Flattening unmatched subcell sg13g2_nor2b_1 in circuit SHIFT_5 (0)(5 instances)
+Flattening unmatched subcell sg13g2_nor3_1 in circuit SHIFT_5 (0)(5 instances)
+Flattening unmatched subcell sg13g2_nor2_1 in circuit SHIFT_5 (0)(5 instances)
+Flattening unmatched subcell sg13g2_tiehi in circuit SHIFT_5 (0)(5 instances)
+Flattening unmatched subcell sg13g2_dfrbpq_1 in circuit SHIFT_5 (0)(5 instances)
+Flattening unmatched subcell sg13g2_decap_4 in circuit SHIFT_5 (0)(2 instances)
+Flattening unmatched subcell sg13cmos5l_and2_1 in circuit CAM_CONTROL (1)(5 instances)
+Flattening unmatched subcell sg13cmos5l_nand2b_1 in circuit CAM_CONTROL (1)(7 instances)
+Flattening unmatched subcell sg13cmos5l_inv_1 in circuit CAM_CONTROL (1)(29 instances)
+Flattening unmatched subcell sg13cmos5l_buf_1 in circuit CAM_CONTROL (1)(17 instances)
+Flattening unmatched subcell sg13cmos5l_dlygate4sd3_1 in circuit CAM_CONTROL (1)(16 instances)
+Flattening unmatched subcell sg13cmos5l_nor2_1 in circuit CAM_CONTROL (1)(11 instances)
+Flattening unmatched subcell sg13cmos5l_dfrbpq_1 in circuit CAM_CONTROL (1)(20 instances)
+Flattening unmatched subcell sg13cmos5l_nand4_1 in circuit CAM_CONTROL (1)(1 instance)
+Flattening unmatched subcell sg13cmos5l_a221oi_1 in circuit CAM_CONTROL (1)(1 instance)
+Flattening unmatched subcell sg13cmos5l_a21o_1 in circuit CAM_CONTROL (1)(4 instances)
+Flattening unmatched subcell sg13cmos5l_o21ai_1 in circuit CAM_CONTROL (1)(8 instances)
+Flattening unmatched subcell sg13cmos5l_nor4_1 in circuit CAM_CONTROL (1)(1 instance)
+Flattening unmatched subcell sg13cmos5l_decap_8 in circuit CAM_CONTROL (1)(6 instances)
+Flattening unmatched subcell sg13cmos5l_or2_1 in circuit CAM_CONTROL (1)(1 instance)
+Flattening unmatched subcell sg13cmos5l_a22oi_1 in circuit CAM_CONTROL (1)(1 instance)
+Flattening unmatched subcell sg13cmos5l_a21oi_1 in circuit CAM_CONTROL (1)(6 instances)
+Flattening unmatched subcell sg13cmos5l_decap_4 in circuit CAM_CONTROL (1)(4 instances)
+Flattening unmatched subcell sg13cmos5l_nor3_1 in circuit CAM_CONTROL (1)(7 instances)
+Flattening unmatched subcell sg13cmos5l_and3_1 in circuit CAM_CONTROL (1)(2 instances)
+Flattening unmatched subcell sg13cmos5l_mux2_1 in circuit CAM_CONTROL (1)(2 instances)
+Flattening unmatched subcell sg13cmos5l_nand2_1 in circuit CAM_CONTROL (1)(6 instances)
+Flattening unmatched subcell sg13cmos5l_xor2_1 in circuit CAM_CONTROL (1)(2 instances)
+Flattening unmatched subcell sg13cmos5l_nor2b_1 in circuit CAM_CONTROL (1)(2 instances)
+Flattening unmatched subcell sg13cmos5l_nand3b_1 in circuit CAM_CONTROL (1)(1 instance)
+Flattening unmatched subcell sg13cmos5l_buf_1 in circuit REFERENCE_MUX (1)(139 instances)
+Flattening unmatched subcell sg13cmos5l_nor2b_1 in circuit REFERENCE_MUX (1)(32 instances)
+Flattening unmatched subcell sg13cmos5l_or2_1 in circuit REFERENCE_MUX (1)(32 instances)
+Flattening unmatched subcell sg13cmos5l_nand2b_1 in circuit decoder_5to32 (1)(3 instances)
+Flattening unmatched subcell sg13cmos5l_nor3_1 in circuit decoder_5to32 (1)(14 instances)
+Flattening unmatched subcell sg13cmos5l_buf_1 in circuit decoder_5to32 (1)(41 instances)
+Flattening unmatched subcell sg13cmos5l_nor2_1 in circuit decoder_5to32 (1)(15 instances)
+Flattening unmatched subcell sg13cmos5l_or3_1 in circuit decoder_5to32 (1)(1 instance)
+Flattening unmatched subcell sg13cmos5l_nor4_1 in circuit decoder_5to32 (1)(3 instances)
+Flattening unmatched subcell sg13cmos5l_nand3_1 in circuit decoder_5to32 (1)(2 instances)
+Flattening unmatched subcell sg13cmos5l_decap_8 in circuit decoder_5to32 (1)(8 instances)
+Flattening unmatched subcell sg13cmos5l_or2_1 in circuit decoder_5to32 (1)(1 instance)
+Flattening unmatched subcell sg13cmos5l_decap_4 in circuit decoder_5to32 (1)(3 instances)
+Flattening unmatched subcell sg13cmos5l_nand3b_1 in circuit decoder_5to32 (1)(5 instances)
+Flattening unmatched subcell sg13cmos5l_inv_1 in circuit decoder_5to32 (1)(1 instance)
+Flattening unmatched subcell sg13cmos5l_dfrbpq_1 in circuit shift_register_32 (1)(32 instances)
+Flattening unmatched subcell sg13cmos5l_nor2_1 in circuit shift_register_32 (1)(32 instances)
+Flattening unmatched subcell sg13cmos5l_inv_1 in circuit shift_register_32 (1)(32 instances)
+Flattening unmatched subcell sg13cmos5l_buf_1 in circuit shift_register_32 (1)(83 instances)
+Flattening unmatched subcell sg13cmos5l_tiehi in circuit shift_register_32 (1)(32 instances)
+Flattening unmatched subcell sg13cmos5l_dlygate4sd3_1 in circuit shift_register_32 (1)(47 instances)
+Flattening unmatched subcell sg13cmos5l_nor3_1 in circuit shift_register_32 (1)(32 instances)
+Flattening unmatched subcell sg13cmos5l_nor2b_1 in circuit shift_register_32 (1)(32 instances)
+Flattening unmatched subcell sg13cmos5l_decap_4 in circuit shift_register_32 (1)(1 instance)
+Flattening unmatched subcell sg13cmos5l_decap_8 in circuit shift_register_32 (1)(2 instances)
+Flattening unmatched subcell sg13cmos5l_nand2b_1 in circuit OUTPUT (1)(1 instance)
+Flattening unmatched subcell sg13cmos5l_buf_1 in circuit OUTPUT (1)(38 instances)
+Flattening unmatched subcell sg13cmos5l_inv_1 in circuit OUTPUT (1)(30 instances)
+Flattening unmatched subcell sg13cmos5l_tiehi in circuit OUTPUT (1)(5 instances)
+Flattening unmatched subcell sg13cmos5l_xnor2_1 in circuit OUTPUT (1)(1 instance)
+Flattening unmatched subcell sg13cmos5l_a221oi_1 in circuit OUTPUT (1)(12 instances)
+Flattening unmatched subcell sg13cmos5l_or3_1 in circuit OUTPUT (1)(2 instances)
+Flattening unmatched subcell sg13cmos5l_dlygate4sd3_1 in circuit OUTPUT (1)(8 instances)
+Flattening unmatched subcell sg13cmos5l_decap_8 in circuit OUTPUT (1)(13 instances)
+Flattening unmatched subcell sg13cmos5l_a22oi_1 in circuit OUTPUT (1)(2 instances)
+Flattening unmatched subcell sg13cmos5l_a21oi_1 in circuit OUTPUT (1)(7 instances)
+Flattening unmatched subcell sg13cmos5l_decap_4 in circuit OUTPUT (1)(3 instances)
+Flattening unmatched subcell sg13cmos5l_nor3_1 in circuit OUTPUT (1)(9 instances)
+Flattening unmatched subcell sg13cmos5l_nor2b_1 in circuit OUTPUT (1)(2 instances)
+Flattening unmatched subcell sg13cmos5l_dfrbpq_1 in circuit OUTPUT (1)(5 instances)
+Flattening unmatched subcell sg13cmos5l_nor2_1 in circuit OUTPUT (1)(5 instances)
+Flattening unmatched subcell sg13cmos5l_and2_1 in circuit OUTPUT (1)(3 instances)
+Flattening unmatched subcell sg13cmos5l_buf_1 in circuit SHIFT_5 (1)(9 instances)
+Flattening unmatched subcell sg13cmos5l_dlygate4sd3_1 in circuit SHIFT_5 (1)(7 instances)
+Flattening unmatched subcell sg13cmos5l_decap_8 in circuit SHIFT_5 (1)(4 instances)
+Flattening unmatched subcell sg13cmos5l_nor2b_1 in circuit SHIFT_5 (1)(5 instances)
+Flattening unmatched subcell sg13cmos5l_nor3_1 in circuit SHIFT_5 (1)(5 instances)
+Flattening unmatched subcell sg13cmos5l_nor2_1 in circuit SHIFT_5 (1)(5 instances)
+Flattening unmatched subcell sg13cmos5l_tiehi in circuit SHIFT_5 (1)(5 instances)
+Flattening unmatched subcell sg13cmos5l_dfrbpq_1 in circuit SHIFT_5 (1)(5 instances)
+Flattening unmatched subcell sg13cmos5l_decap_4 in circuit SHIFT_5 (1)(2 instances)
+
+Subcircuit summary:
+Circuit 1: INV                             |Circuit 2: INV                             
+-------------------------------------------|-------------------------------------------
+sg13_lv_nmos (1)                           |sg13_lv_nmos (1)                           
+sg13_lv_pmos (1)                           |sg13_lv_pmos (1)                           
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: INV                             |Circuit 2: INV                             
+-------------------------------------------|-------------------------------------------
+Y                                          |Y                                          
+IN                                         |IN                                         
+GND                                        |GND                                        
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes INV and INV are equivalent.
+
+Subcircuit summary:
+Circuit 1: CELL                            |Circuit 2: CELL                            
+-------------------------------------------|-------------------------------------------
+INV (2)                                    |INV (2)                                    
+sg13_lv_nmos (6)                           |sg13_lv_nmos (6)                           
+Number of devices: 8                       |Number of devices: 8                       
+Number of nets: 11                         |Number of nets: 11                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+Circuits match correctly.
+
+Subcircuit pins:
+Circuit 1: CELL                            |Circuit 2: CELL                            
+-------------------------------------------|-------------------------------------------
+VEVAL                                      |VEVAL                                      
+ML                                         |ML                                         
+VDD                                        |VDD                                        
+SL_N                                       |SL_N                                       
+SL                                         |SL                                         
+WL                                         |WL                                         
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes CELL and CELL are equivalent.
+
+Subcircuit summary:
+Circuit 1: flip_flop                       |Circuit 2: flip_flop                       
+-------------------------------------------|-------------------------------------------
+INV (7)                                    |INV (7)                                    
+sg13_lv_nmos (4)                           |sg13_lv_nmos (4)                           
+sg13_lv_pmos (4)                           |sg13_lv_pmos (4)                           
+Number of devices: 15                      |Number of devices: 15                      
+Number of nets: 13                         |Number of nets: 13                         
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: flip_flop                       |Circuit 2: flip_flop                       
+-------------------------------------------|-------------------------------------------
+CLK                                        |CLK                                        
+Q                                          |Q                                          
+D                                          |D                                          
+Q_n                                        |Q_n                                        
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes flip_flop and flip_flop are equivalent.
+
+Subcircuit summary:
+Circuit 1: BUFFER                          |Circuit 2: BUFFER                          
+-------------------------------------------|-------------------------------------------
+sg13_lv_nmos (1)                           |sg13_lv_nmos (1)                           
+sg13_lv_pmos (1)                           |sg13_lv_pmos (1)                           
+INV (1)                                    |INV (1)                                    
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 5                          |Number of nets: 5                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: BUFFER                          |Circuit 2: BUFFER                          
+-------------------------------------------|-------------------------------------------
+OUTPRE                                     |OUTPRE                                     
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+OUTP                                       |OUTP                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes BUFFER and BUFFER are equivalent.
+
+Subcircuit summary:
+Circuit 1: WORD_32bits                     |Circuit 2: WORD_32bits                     
+-------------------------------------------|-------------------------------------------
+CELL (32)                                  |CELL (32)                                  
+sg13_lv_pmos (1)                           |sg13_lv_pmos (1)                           
+Number of devices: 33                      |Number of devices: 33                      
+Number of nets: 70                         |Number of nets: 70                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+Circuits match correctly.
+
+Subcircuit pins:
+Circuit 1: WORD_32bits                     |Circuit 2: WORD_32bits                     
+-------------------------------------------|-------------------------------------------
+VEVAL                                      |VEVAL                                      
+VSS                                        |VSS                                        
+WL                                         |WL                                         
+VDD                                        |VDD                                        
+SL_23                                      |SL_23                                      
+SL_7                                       |SL_7                                       
+SL_6                                       |SL_6                                       
+SL_5                                       |SL_5                                       
+SL_4                                       |SL_4                                       
+SL_2                                       |SL_2                                       
+SL_1                                       |SL_1                                       
+SL_0                                       |SL_0                                       
+SL_3                                       |SL_3                                       
+SL_15                                      |SL_15                                      
+SL_14                                      |SL_14                                      
+SL_13                                      |SL_13                                      
+SL_12                                      |SL_12                                      
+SL_10                                      |SL_10                                      
+SL_9                                       |SL_9                                       
+SL_8                                       |SL_8                                       
+SL_11                                      |SL_11                                      
+SL_22                                      |SL_22                                      
+SL_21                                      |SL_21                                      
+SL_20                                      |SL_20                                      
+SL_18                                      |SL_18                                      
+SL_17                                      |SL_17                                      
+SL_16                                      |SL_16                                      
+SL_19                                      |SL_19                                      
+SL_31                                      |SL_31                                      
+SL_30                                      |SL_30                                      
+SL_29                                      |SL_29                                      
+SL_28                                      |SL_28                                      
+SL_26                                      |SL_26                                      
+SL_25                                      |SL_25                                      
+SL_24                                      |SL_24                                      
+SL_27                                      |SL_27                                      
+SL_23N                                     |SL_23N                                     
+SL_7N                                      |SL_7N                                      
+SL_6N                                      |SL_6N                                      
+SL_5N                                      |SL_5N                                      
+SL_4N                                      |SL_4N                                      
+SL_2N                                      |SL_2N                                      
+SL_1N                                      |SL_1N                                      
+SL_0N                                      |SL_0N                                      
+SL_3N                                      |SL_3N                                      
+SL_15N                                     |SL_15N                                     
+SL_14N                                     |SL_14N                                     
+SL_13N                                     |SL_13N                                     
+SL_12N                                     |SL_12N                                     
+SL_10N                                     |SL_10N                                     
+SL_9N                                      |SL_9N                                      
+SL_8N                                      |SL_8N                                      
+SL_11N                                     |SL_11N                                     
+SL_22N                                     |SL_22N                                     
+SL_21N                                     |SL_21N                                     
+SL_20N                                     |SL_20N                                     
+SL_18N                                     |SL_18N                                     
+SL_17N                                     |SL_17N                                     
+SL_16N                                     |SL_16N                                     
+SL_19N                                     |SL_19N                                     
+SL_31N                                     |SL_31N                                     
+SL_30N                                     |SL_30N                                     
+SL_29N                                     |SL_29N                                     
+SL_28N                                     |SL_28N                                     
+SL_26N                                     |SL_26N                                     
+SL_25N                                     |SL_25N                                     
+SL_24N                                     |SL_24N                                     
+SL_27N                                     |SL_27N                                     
+pc                                         |pc                                         
+ML                                         |ML                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes WORD_32bits and WORD_32bits are equivalent.
+
+Subcircuit summary:
+Circuit 1: inverter_sens                   |Circuit 2: inverter_sens                   
+-------------------------------------------|-------------------------------------------
+INV (32)                                   |INV (32)                                   
+Number of devices: 32                      |Number of devices: 32                      
+Number of nets: 66                         |Number of nets: 66                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+Circuits match correctly.
+
+Subcircuit pins:
+Circuit 1: inverter_sens                   |Circuit 2: inverter_sens                   
+-------------------------------------------|-------------------------------------------
+ML_15                                      |ML_15                                      
+ML_11                                      |ML_11                                      
+ML_7                                       |ML_7                                       
+ML_23                                      |ML_23                                      
+ML_21                                      |ML_21                                      
+ML_4                                       |ML_4                                       
+ML_22                                      |ML_22                                      
+ML_24                                      |ML_24                                      
+ML_28                                      |ML_28                                      
+ML_20                                      |ML_20                                      
+ML_10                                      |ML_10                                      
+ML_8                                       |ML_8                                       
+ML_5                                       |ML_5                                       
+ML_31                                      |ML_31                                      
+ML_29                                      |ML_29                                      
+ML_30                                      |ML_30                                      
+ML_2                                       |ML_2                                       
+ML_12                                      |ML_12                                      
+ML_16                                      |ML_16                                      
+ML_13                                      |ML_13                                      
+ML_14                                      |ML_14                                      
+ML_17                                      |ML_17                                      
+ML_19                                      |ML_19                                      
+ML_18                                      |ML_18                                      
+ML_3                                       |ML_3                                       
+ML_9                                       |ML_9                                       
+ML_27                                      |ML_27                                      
+ML_6                                       |ML_6                                       
+ML_25                                      |ML_25                                      
+ML_26                                      |ML_26                                      
+ML_0                                       |ML_0                                       
+ML_1                                       |ML_1                                       
+OUT15                                      |OUT15                                      
+OUT11                                      |OUT11                                      
+OUT7                                       |OUT7                                       
+OUT23                                      |OUT23                                      
+OUT21                                      |OUT21                                      
+OUT4                                       |OUT4                                       
+OUT22                                      |OUT22                                      
+OUT24                                      |OUT24                                      
+OUT28                                      |OUT28                                      
+OUT20                                      |OUT20                                      
+OUT10                                      |OUT10                                      
+OUT8                                       |OUT8                                       
+OUT5                                       |OUT5                                       
+OUT31                                      |OUT31                                      
+OUT29                                      |OUT29                                      
+OUT30                                      |OUT30                                      
+OUT2                                       |OUT2                                       
+OUT12                                      |OUT12                                      
+OUT16                                      |OUT16                                      
+OUT13                                      |OUT13                                      
+OUT14                                      |OUT14                                      
+OUT17                                      |OUT17                                      
+OUT19                                      |OUT19                                      
+OUT18                                      |OUT18                                      
+OUT3                                       |OUT3                                       
+OUT9                                       |OUT9                                       
+OUT27                                      |OUT27                                      
+OUT6                                       |OUT6                                       
+OUT25                                      |OUT25                                      
+OUT26                                      |OUT26                                      
+OUT0                                       |OUT0                                       
+OUT1                                       |OUT1                                       
+GND                                        |GND                                        
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes inverter_sens and inverter_sens are equivalent.
+
+Subcircuit summary:
+Circuit 1: COMPARATOR_NEWBUFFER_64x32      |Circuit 2: COMPARATOR_NEWBUFFER_64x32      
+-------------------------------------------|-------------------------------------------
+flip_flop (32)                             |flip_flop (32)                             
+Number of devices: 32                      |Number of devices: 32                      
+Number of nets: 99                         |Number of nets: 99                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+Circuits match correctly.
+
+Subcircuit pins:
+Circuit 1: COMPARATOR_NEWBUFFER_64x32      |Circuit 2: COMPARATOR_NEWBUFFER_64x32      
+-------------------------------------------|-------------------------------------------
+SENSML31                                   |SENSML31                                   
+SENSML30                                   |SENSML30                                   
+SENSML29                                   |SENSML29                                   
+SENSML28                                   |SENSML28                                   
+SENSML27                                   |SENSML27                                   
+SENSML25                                   |SENSML25                                   
+SENSML26                                   |SENSML26                                   
+SENSML24                                   |SENSML24                                   
+SENSML23                                   |SENSML23                                   
+SENSML21                                   |SENSML21                                   
+SENSML22                                   |SENSML22                                   
+SENSML20                                   |SENSML20                                   
+SENSML18                                   |SENSML18                                   
+SENSML17                                   |SENSML17                                   
+SENSML19                                   |SENSML19                                   
+SENSML16                                   |SENSML16                                   
+SENSML15                                   |SENSML15                                   
+SENSML13                                   |SENSML13                                   
+SENSML14                                   |SENSML14                                   
+SENSML12                                   |SENSML12                                   
+SENSML11                                   |SENSML11                                   
+SENSML9                                    |SENSML9                                    
+SENSML10                                   |SENSML10                                   
+SENSML8                                    |SENSML8                                    
+SENSML7                                    |SENSML7                                    
+SENSML5                                    |SENSML5                                    
+SENSML6                                    |SENSML6                                    
+SENSML4                                    |SENSML4                                    
+SENSML3                                    |SENSML3                                    
+SENSML1                                    |SENSML1                                    
+SENSML2                                    |SENSML2                                    
+SENSML0                                    |SENSML0                                    
+COMP31                                     |COMP31                                     
+COMP30                                     |COMP30                                     
+COMP29                                     |COMP29                                     
+COMP28                                     |COMP28                                     
+COMP27                                     |COMP27                                     
+COMP25                                     |COMP25                                     
+COMP26                                     |COMP26                                     
+COMP24                                     |COMP24                                     
+COMP23                                     |COMP23                                     
+COMP21                                     |COMP21                                     
+COMP22                                     |COMP22                                     
+COMP20                                     |COMP20                                     
+COMP18                                     |COMP18                                     
+COMP17                                     |COMP17                                     
+COMP19                                     |COMP19                                     
+COMP16                                     |COMP16                                     
+COMP15                                     |COMP15                                     
+COMP13                                     |COMP13                                     
+COMP14                                     |COMP14                                     
+COMP12                                     |COMP12                                     
+COMP11                                     |COMP11                                     
+COMP9                                      |COMP9                                      
+COMP10                                     |COMP10                                     
+COMP8                                      |COMP8                                      
+COMP7                                      |COMP7                                      
+COMP5                                      |COMP5                                      
+COMP6                                      |COMP6                                      
+COMP4                                      |COMP4                                      
+COMP3                                      |COMP3                                      
+COMP1                                      |COMP1                                      
+COMP2                                      |COMP2                                      
+COMP0                                      |COMP0                                      
+REFSENS                                    |REFSENS                                    
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes COMPARATOR_NEWBUFFER_64x32 and COMPARATOR_NEWBUFFER_64x32 are equivalent.
+
+Subcircuit summary:
+Circuit 1: reference_complete              |Circuit 2: reference_complete              
+-------------------------------------------|-------------------------------------------
+BUFFER (1)                                 |BUFFER (1)                                 
+INV (1)                                    |INV (1)                                    
+WORD_32bits (1)                            |WORD_32bits (1)                            
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 72                         |Number of nets: 72                         
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: reference_complete              |Circuit 2: reference_complete              
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+REFSENS                                    |REFSENS                                    
+SL_0                                       |SL_0                                       
+SL_0N                                      |SL_0N                                      
+SL_1                                       |SL_1                                       
+SL_10                                      |SL_10                                      
+SL_10N                                     |SL_10N                                     
+SL_11                                      |SL_11                                      
+SL_11N                                     |SL_11N                                     
+SL_12                                      |SL_12                                      
+SL_12N                                     |SL_12N                                     
+SL_13                                      |SL_13                                      
+SL_13N                                     |SL_13N                                     
+SL_14                                      |SL_14                                      
+SL_14N                                     |SL_14N                                     
+SL_15                                      |SL_15                                      
+SL_15N                                     |SL_15N                                     
+SL_16                                      |SL_16                                      
+SL_16N                                     |SL_16N                                     
+SL_17                                      |SL_17                                      
+SL_17N                                     |SL_17N                                     
+SL_18                                      |SL_18                                      
+SL_18N                                     |SL_18N                                     
+SL_19                                      |SL_19                                      
+SL_19N                                     |SL_19N                                     
+SL_1N                                      |SL_1N                                      
+SL_2                                       |SL_2                                       
+SL_20                                      |SL_20                                      
+SL_20N                                     |SL_20N                                     
+SL_21                                      |SL_21                                      
+SL_21N                                     |SL_21N                                     
+SL_22                                      |SL_22                                      
+SL_22N                                     |SL_22N                                     
+SL_23                                      |SL_23                                      
+SL_23N                                     |SL_23N                                     
+SL_24                                      |SL_24                                      
+SL_24N                                     |SL_24N                                     
+SL_25                                      |SL_25                                      
+SL_25N                                     |SL_25N                                     
+SL_26                                      |SL_26                                      
+SL_26N                                     |SL_26N                                     
+SL_27                                      |SL_27                                      
+SL_27N                                     |SL_27N                                     
+SL_28                                      |SL_28                                      
+SL_28N                                     |SL_28N                                     
+SL_29                                      |SL_29                                      
+SL_29N                                     |SL_29N                                     
+SL_2N                                      |SL_2N                                      
+SL_3                                       |SL_3                                       
+SL_30                                      |SL_30                                      
+SL_30N                                     |SL_30N                                     
+SL_31                                      |SL_31                                      
+SL_31N                                     |SL_31N                                     
+SL_3N                                      |SL_3N                                      
+SL_4                                       |SL_4                                       
+SL_4N                                      |SL_4N                                      
+SL_5                                       |SL_5                                       
+SL_5N                                      |SL_5N                                      
+SL_6                                       |SL_6                                       
+SL_6N                                      |SL_6N                                      
+SL_7                                       |SL_7                                       
+SL_7N                                      |SL_7N                                      
+SL_8                                       |SL_8                                       
+SL_8N                                      |SL_8N                                      
+SL_9                                       |SL_9                                       
+SL_9N                                      |SL_9N                                      
+VEVAL                                      |VEVAL                                      
+WL                                         |WL                                         
+pc                                         |pc                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes reference_complete and reference_complete are equivalent.
+
+Subcircuit summary:
+Circuit 1: ARRAY_32x32                     |Circuit 2: ARRAY_32x32                     
+-------------------------------------------|-------------------------------------------
+WORD_32bits (32)                           |WORD_32bits (32)                           
+Number of devices: 32                      |Number of devices: 32                      
+Number of nets: 132                        |Number of nets: 132                        
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+Circuits match correctly.
+
+Subcircuit pins:
+Circuit 1: ARRAY_32x32                     |Circuit 2: ARRAY_32x32                     
+-------------------------------------------|-------------------------------------------
+SL_0                                       |SL_0                                       
+SL_0N                                      |SL_0N                                      
+SL_1                                       |SL_1                                       
+SL_10                                      |SL_10                                      
+SL_10N                                     |SL_10N                                     
+SL_11                                      |SL_11                                      
+SL_11N                                     |SL_11N                                     
+SL_12                                      |SL_12                                      
+SL_12N                                     |SL_12N                                     
+SL_13                                      |SL_13                                      
+SL_13N                                     |SL_13N                                     
+SL_14                                      |SL_14                                      
+SL_14N                                     |SL_14N                                     
+SL_15                                      |SL_15                                      
+SL_15N                                     |SL_15N                                     
+SL_16                                      |SL_16                                      
+SL_16N                                     |SL_16N                                     
+SL_17                                      |SL_17                                      
+SL_17N                                     |SL_17N                                     
+SL_18                                      |SL_18                                      
+SL_18N                                     |SL_18N                                     
+SL_19                                      |SL_19                                      
+SL_19N                                     |SL_19N                                     
+SL_1N                                      |SL_1N                                      
+SL_2                                       |SL_2                                       
+SL_20                                      |SL_20                                      
+SL_20N                                     |SL_20N                                     
+SL_21                                      |SL_21                                      
+SL_21N                                     |SL_21N                                     
+SL_22                                      |SL_22                                      
+SL_22N                                     |SL_22N                                     
+SL_23                                      |SL_23                                      
+SL_23N                                     |SL_23N                                     
+SL_24                                      |SL_24                                      
+SL_24N                                     |SL_24N                                     
+SL_25                                      |SL_25                                      
+SL_25N                                     |SL_25N                                     
+SL_26                                      |SL_26                                      
+SL_26N                                     |SL_26N                                     
+SL_27                                      |SL_27                                      
+SL_27N                                     |SL_27N                                     
+SL_28                                      |SL_28                                      
+SL_28N                                     |SL_28N                                     
+SL_29                                      |SL_29                                      
+SL_29N                                     |SL_29N                                     
+SL_2N                                      |SL_2N                                      
+SL_3                                       |SL_3                                       
+SL_30                                      |SL_30                                      
+SL_30N                                     |SL_30N                                     
+SL_31                                      |SL_31                                      
+SL_31N                                     |SL_31N                                     
+SL_3N                                      |SL_3N                                      
+SL_4                                       |SL_4                                       
+SL_4N                                      |SL_4N                                      
+SL_5                                       |SL_5                                       
+SL_5N                                      |SL_5N                                      
+SL_6                                       |SL_6                                       
+SL_6N                                      |SL_6N                                      
+SL_7                                       |SL_7                                       
+SL_7N                                      |SL_7N                                      
+SL_8                                       |SL_8                                       
+SL_8N                                      |SL_8N                                      
+SL_9                                       |SL_9                                       
+SL_9N                                      |SL_9N                                      
+VDD                                        |VDD                                        
+VEVAL                                      |VEVAL                                      
+VSS                                        |VSS                                        
+pc                                         |pc                                         
+ML_2                                       |ML_2                                       
+ML_1                                       |ML_1                                       
+ML_30                                      |ML_30                                      
+ML_31                                      |ML_31                                      
+ML_26                                      |ML_26                                      
+ML_8                                       |ML_8                                       
+ML_24                                      |ML_24                                      
+ML_11                                      |ML_11                                      
+ML_25                                      |ML_25                                      
+ML_29                                      |ML_29                                      
+ML_27                                      |ML_27                                      
+ML_28                                      |ML_28                                      
+ML_15                                      |ML_15                                      
+ML_3                                       |ML_3                                       
+ML_6                                       |ML_6                                       
+ML_7                                       |ML_7                                       
+ML_5                                       |ML_5                                       
+ML_4                                       |ML_4                                       
+ML_0                                       |ML_0                                       
+ML_10                                      |ML_10                                      
+ML_9                                       |ML_9                                       
+ML_20                                      |ML_20                                      
+ML_23                                      |ML_23                                      
+ML_19                                      |ML_19                                      
+ML_21                                      |ML_21                                      
+ML_22                                      |ML_22                                      
+ML_16                                      |ML_16                                      
+ML_18                                      |ML_18                                      
+ML_17                                      |ML_17                                      
+ML_12                                      |ML_12                                      
+ML_13                                      |ML_13                                      
+ML_14                                      |ML_14                                      
+WL_2                                       |WL_2                                       
+WL_1                                       |WL_1                                       
+WL_30                                      |WL_30                                      
+WL_31                                      |WL_31                                      
+WL_26                                      |WL_26                                      
+WL_8                                       |WL_8                                       
+WL_24                                      |WL_24                                      
+WL_11                                      |WL_11                                      
+WL_25                                      |WL_25                                      
+WL_29                                      |WL_29                                      
+WL_27                                      |WL_27                                      
+WL_28                                      |WL_28                                      
+WL_15                                      |WL_15                                      
+WL_3                                       |WL_3                                       
+WL_6                                       |WL_6                                       
+WL_7                                       |WL_7                                       
+WL_5                                       |WL_5                                       
+WL_4                                       |WL_4                                       
+WL_0                                       |WL_0                                       
+WL_10                                      |WL_10                                      
+WL_9                                       |WL_9                                       
+WL_20                                      |WL_20                                      
+WL_23                                      |WL_23                                      
+WL_19                                      |WL_19                                      
+WL_21                                      |WL_21                                      
+WL_22                                      |WL_22                                      
+WL_16                                      |WL_16                                      
+WL_18                                      |WL_18                                      
+WL_17                                      |WL_17                                      
+WL_12                                      |WL_12                                      
+WL_13                                      |WL_13                                      
+WL_14                                      |WL_14                                      
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes ARRAY_32x32 and ARRAY_32x32 are equivalent.
+
+Subcircuit summary:
+Circuit 1: PART_SENS_COMPARATOR            |Circuit 2: PART_SENS_COMPARATOR            
+-------------------------------------------|-------------------------------------------
+inverter_sens (1)                          |inverter_sens (1)                          
+COMPARATOR_NEWBUFFER_64x32 (1)             |COMPARATOR_NEWBUFFER_64x32 (1)             
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 99                         |Number of nets: 99                         
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: PART_SENS_COMPARATOR            |Circuit 2: PART_SENS_COMPARATOR            
+-------------------------------------------|-------------------------------------------
+ML_0                                       |ML_0                                       
+ML_1                                       |ML_1                                       
+ML_10                                      |ML_10                                      
+ML_11                                      |ML_11                                      
+ML_12                                      |ML_12                                      
+ML_13                                      |ML_13                                      
+ML_14                                      |ML_14                                      
+ML_15                                      |ML_15                                      
+ML_16                                      |ML_16                                      
+ML_17                                      |ML_17                                      
+ML_18                                      |ML_18                                      
+ML_19                                      |ML_19                                      
+ML_2                                       |ML_2                                       
+ML_20                                      |ML_20                                      
+ML_21                                      |ML_21                                      
+ML_22                                      |ML_22                                      
+ML_23                                      |ML_23                                      
+ML_24                                      |ML_24                                      
+ML_25                                      |ML_25                                      
+ML_26                                      |ML_26                                      
+ML_27                                      |ML_27                                      
+ML_28                                      |ML_28                                      
+ML_29                                      |ML_29                                      
+ML_3                                       |ML_3                                       
+ML_30                                      |ML_30                                      
+ML_31                                      |ML_31                                      
+ML_4                                       |ML_4                                       
+ML_5                                       |ML_5                                       
+ML_6                                       |ML_6                                       
+ML_7                                       |ML_7                                       
+ML_8                                       |ML_8                                       
+ML_9                                       |ML_9                                       
+COMP0                                      |COMP0                                      
+COMP1                                      |COMP1                                      
+COMP10                                     |COMP10                                     
+COMP11                                     |COMP11                                     
+COMP12                                     |COMP12                                     
+COMP13                                     |COMP13                                     
+COMP14                                     |COMP14                                     
+COMP15                                     |COMP15                                     
+COMP16                                     |COMP16                                     
+COMP17                                     |COMP17                                     
+COMP18                                     |COMP18                                     
+COMP19                                     |COMP19                                     
+COMP2                                      |COMP2                                      
+COMP20                                     |COMP20                                     
+COMP21                                     |COMP21                                     
+COMP22                                     |COMP22                                     
+COMP23                                     |COMP23                                     
+COMP24                                     |COMP24                                     
+COMP25                                     |COMP25                                     
+COMP26                                     |COMP26                                     
+COMP27                                     |COMP27                                     
+COMP28                                     |COMP28                                     
+COMP29                                     |COMP29                                     
+COMP3                                      |COMP3                                      
+COMP30                                     |COMP30                                     
+COMP31                                     |COMP31                                     
+COMP4                                      |COMP4                                      
+COMP5                                      |COMP5                                      
+COMP6                                      |COMP6                                      
+COMP7                                      |COMP7                                      
+COMP8                                      |COMP8                                      
+COMP9                                      |COMP9                                      
+REFSENS                                    |REFSENS                                    
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes PART_SENS_COMPARATOR and PART_SENS_COMPARATOR are equivalent.
+Class CAM_CONTROL:  Merged 30 devices.
+Equate pins:  cell CAM_CONTROL and/or CAM_CONTROL has no elements.
+Equate pins:  cell REFERENCE_MUX and/or REFERENCE_MUX has no elements.
+Class decoder_5to32:  Merged 36 devices.
+Equate pins:  cell decoder_5to32 and/or decoder_5to32 has no elements.
+Class shift_register_32:  Merged 8 devices.
+Equate pins:  cell shift_register_32 and/or shift_register_32 has no elements.
+
+Subcircuit summary:
+Circuit 1: Xnor                            |Circuit 2: Xnor                            
+-------------------------------------------|-------------------------------------------
+INV (3)                                    |INV (3)                                    
+sg13_lv_nmos (1)                           |sg13_lv_nmos (1)                           
+sg13_lv_pmos (1)                           |sg13_lv_pmos (1)                           
+Number of devices: 5                       |Number of devices: 5                       
+Number of nets: 8                          |Number of nets: 8                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: Xnor                            |Circuit 2: Xnor                            
+-------------------------------------------|-------------------------------------------
+OUT                                        |OUT                                        
+B                                          |B                                          
+A                                          |A                                          
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes Xnor and Xnor are equivalent.
+Class OUTPUT:  Merged 56 devices.
+Equate pins:  cell OUTPUT and/or OUTPUT has no elements.
+
+Subcircuit summary:
+Circuit 1: ANALOG_FIGURE                   |Circuit 2: ANALOG_FIGURE                   
+-------------------------------------------|-------------------------------------------
+reference_complete (1)                     |reference_complete (1)                     
+ARRAY_32x32 (1)                            |ARRAY_32x32 (1)                            
+PART_SENS_COMPARATOR (1)                   |PART_SENS_COMPARATOR (1)                   
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 230                        |Number of nets: 230                        
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: ANALOG_FIGURE                   |Circuit 2: ANALOG_FIGURE                   
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+PSL_0                                      |PSL_0                                      
+PSL_0N                                     |PSL_0N                                     
+PSL_1                                      |PSL_1                                      
+PSL_10                                     |PSL_10                                     
+PSL_10N                                    |PSL_10N                                    
+PSL_11                                     |PSL_11                                     
+PSL_11N                                    |PSL_11N                                    
+PSL_12                                     |PSL_12                                     
+PSL_12N                                    |PSL_12N                                    
+PSL_13                                     |PSL_13                                     
+PSL_13N                                    |PSL_13N                                    
+PSL_14                                     |PSL_14                                     
+PSL_14N                                    |PSL_14N                                    
+PSL_15                                     |PSL_15                                     
+PSL_15N                                    |PSL_15N                                    
+PSL_16                                     |PSL_16                                     
+PSL_16N                                    |PSL_16N                                    
+PSL_17                                     |PSL_17                                     
+PSL_17N                                    |PSL_17N                                    
+PSL_18                                     |PSL_18                                     
+PSL_18N                                    |PSL_18N                                    
+PSL_19                                     |PSL_19                                     
+PSL_19N                                    |PSL_19N                                    
+PSL_1N                                     |PSL_1N                                     
+PSL_2                                      |PSL_2                                      
+PSL_20                                     |PSL_20                                     
+PSL_20N                                    |PSL_20N                                    
+PSL_21                                     |PSL_21                                     
+PSL_21N                                    |PSL_21N                                    
+PSL_22                                     |PSL_22                                     
+PSL_22N                                    |PSL_22N                                    
+PSL_23                                     |PSL_23                                     
+PSL_23N                                    |PSL_23N                                    
+PSL_24                                     |PSL_24                                     
+PSL_24N                                    |PSL_24N                                    
+PSL_25                                     |PSL_25                                     
+PSL_25N                                    |PSL_25N                                    
+PSL_26                                     |PSL_26                                     
+PSL_26N                                    |PSL_26N                                    
+PSL_27                                     |PSL_27                                     
+PSL_27N                                    |PSL_27N                                    
+PSL_28                                     |PSL_28                                     
+PSL_28N                                    |PSL_28N                                    
+PSL_29                                     |PSL_29                                     
+PSL_29N                                    |PSL_29N                                    
+PSL_2N                                     |PSL_2N                                     
+PSL_3                                      |PSL_3                                      
+PSL_30                                     |PSL_30                                     
+PSL_30N                                    |PSL_30N                                    
+PSL_31                                     |PSL_31                                     
+PSL_31N                                    |PSL_31N                                    
+PSL_3N                                     |PSL_3N                                     
+PSL_4                                      |PSL_4                                      
+PSL_4N                                     |PSL_4N                                     
+PSL_5                                      |PSL_5                                      
+PSL_5N                                     |PSL_5N                                     
+PSL_6                                      |PSL_6                                      
+PSL_6N                                     |PSL_6N                                     
+PSL_7                                      |PSL_7                                      
+PSL_7N                                     |PSL_7N                                     
+PSL_8                                      |PSL_8                                      
+PSL_8N                                     |PSL_8N                                     
+PSL_9                                      |PSL_9                                      
+PSL_9N                                     |PSL_9N                                     
+WL                                         |WL                                         
+SL_0                                       |SL_0                                       
+SL_0N                                      |SL_0N                                      
+SL_1                                       |SL_1                                       
+SL_10                                      |SL_10                                      
+SL_10N                                     |SL_10N                                     
+SL_11                                      |SL_11                                      
+SL_11N                                     |SL_11N                                     
+SL_12                                      |SL_12                                      
+SL_12N                                     |SL_12N                                     
+SL_13                                      |SL_13                                      
+SL_13N                                     |SL_13N                                     
+SL_14                                      |SL_14                                      
+SL_14N                                     |SL_14N                                     
+SL_15                                      |SL_15                                      
+SL_15N                                     |SL_15N                                     
+SL_16                                      |SL_16                                      
+SL_16N                                     |SL_16N                                     
+SL_17                                      |SL_17                                      
+SL_17N                                     |SL_17N                                     
+SL_18                                      |SL_18                                      
+SL_18N                                     |SL_18N                                     
+SL_19                                      |SL_19                                      
+SL_19N                                     |SL_19N                                     
+SL_1N                                      |SL_1N                                      
+SL_2                                       |SL_2                                       
+SL_20                                      |SL_20                                      
+SL_20N                                     |SL_20N                                     
+SL_21                                      |SL_21                                      
+SL_21N                                     |SL_21N                                     
+SL_22                                      |SL_22                                      
+SL_22N                                     |SL_22N                                     
+SL_23                                      |SL_23                                      
+SL_23N                                     |SL_23N                                     
+SL_24                                      |SL_24                                      
+SL_24N                                     |SL_24N                                     
+SL_25                                      |SL_25                                      
+SL_25N                                     |SL_25N                                     
+SL_26                                      |SL_26                                      
+SL_26N                                     |SL_26N                                     
+SL_27                                      |SL_27                                      
+SL_27N                                     |SL_27N                                     
+SL_28                                      |SL_28                                      
+SL_28N                                     |SL_28N                                     
+SL_29                                      |SL_29                                      
+SL_29N                                     |SL_29N                                     
+SL_2N                                      |SL_2N                                      
+SL_3                                       |SL_3                                       
+SL_30                                      |SL_30                                      
+SL_30N                                     |SL_30N                                     
+SL_31                                      |SL_31                                      
+SL_31N                                     |SL_31N                                     
+SL_3N                                      |SL_3N                                      
+SL_4                                       |SL_4                                       
+SL_4N                                      |SL_4N                                      
+SL_5                                       |SL_5                                       
+SL_5N                                      |SL_5N                                      
+SL_6                                       |SL_6                                       
+SL_6N                                      |SL_6N                                      
+SL_7                                       |SL_7                                       
+SL_7N                                      |SL_7N                                      
+SL_8                                       |SL_8                                       
+SL_8N                                      |SL_8N                                      
+SL_9                                       |SL_9                                       
+SL_9N                                      |SL_9N                                      
+WL_0                                       |WL_0                                       
+WL_1                                       |WL_1                                       
+WL_10                                      |WL_10                                      
+WL_11                                      |WL_11                                      
+WL_12                                      |WL_12                                      
+WL_13                                      |WL_13                                      
+WL_14                                      |WL_14                                      
+WL_15                                      |WL_15                                      
+WL_16                                      |WL_16                                      
+WL_17                                      |WL_17                                      
+WL_18                                      |WL_18                                      
+WL_19                                      |WL_19                                      
+WL_2                                       |WL_2                                       
+WL_20                                      |WL_20                                      
+WL_21                                      |WL_21                                      
+WL_22                                      |WL_22                                      
+WL_23                                      |WL_23                                      
+WL_24                                      |WL_24                                      
+WL_25                                      |WL_25                                      
+WL_26                                      |WL_26                                      
+WL_27                                      |WL_27                                      
+WL_28                                      |WL_28                                      
+WL_29                                      |WL_29                                      
+WL_3                                       |WL_3                                       
+WL_30                                      |WL_30                                      
+WL_31                                      |WL_31                                      
+WL_4                                       |WL_4                                       
+WL_5                                       |WL_5                                       
+WL_6                                       |WL_6                                       
+WL_7                                       |WL_7                                       
+WL_8                                       |WL_8                                       
+WL_9                                       |WL_9                                       
+COMP0                                      |COMP0                                      
+COMP1                                      |COMP1                                      
+COMP10                                     |COMP10                                     
+COMP11                                     |COMP11                                     
+COMP12                                     |COMP12                                     
+COMP13                                     |COMP13                                     
+COMP14                                     |COMP14                                     
+COMP15                                     |COMP15                                     
+COMP16                                     |COMP16                                     
+COMP17                                     |COMP17                                     
+COMP18                                     |COMP18                                     
+COMP19                                     |COMP19                                     
+COMP2                                      |COMP2                                      
+COMP20                                     |COMP20                                     
+COMP21                                     |COMP21                                     
+COMP22                                     |COMP22                                     
+COMP23                                     |COMP23                                     
+COMP24                                     |COMP24                                     
+COMP25                                     |COMP25                                     
+COMP26                                     |COMP26                                     
+COMP27                                     |COMP27                                     
+COMP28                                     |COMP28                                     
+COMP29                                     |COMP29                                     
+COMP3                                      |COMP3                                      
+COMP30                                     |COMP30                                     
+COMP31                                     |COMP31                                     
+COMP4                                      |COMP4                                      
+COMP5                                      |COMP5                                      
+COMP6                                      |COMP6                                      
+COMP7                                      |COMP7                                      
+COMP8                                      |COMP8                                      
+COMP9                                      |COMP9                                      
+VEVAL                                      |VEVAL                                      
+PC                                         |PC                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes ANALOG_FIGURE and ANALOG_FIGURE are equivalent.
+Class SHIFT_5:  Merged 18 devices.
+Equate pins:  cell SHIFT_5 and/or SHIFT_5 has no elements.
+
+Subcircuit summary:
+Circuit 1: COMPLETE_PROYECT_FIG            |Circuit 2: COMPLETE_PROYECT_FIG            
+-------------------------------------------|-------------------------------------------
+CAM_CONTROL (1)                            |CAM_CONTROL (1)                            
+REFERENCE_MUX (1)                          |REFERENCE_MUX (1)                          
+decoder_5to32 (1)                          |decoder_5to32 (1)                          
+shift_register_32 (1)                      |shift_register_32 (1)                      
+Xnor (1)                                   |Xnor (1)                                   
+OUTPUT (1)                                 |OUTPUT (1)                                 
+ANALOG_FIGURE (1)                          |ANALOG_FIGURE (1)                          
+SHIFT_5 (1)                                |SHIFT_5 (1)                                
+sg13_lv_nmos (1)                           |sg13_lv_nmos (1)                           
+sg13_lv_pmos (1)                           |sg13_lv_pmos (1)                           
+Number of devices: 10                      |Number of devices: 10                      
+Number of nets: 218                        |Number of nets: 218                        
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: COMPLETE_PROYECT_FIG            |Circuit 2: COMPLETE_PROYECT_FIG            
+-------------------------------------------|-------------------------------------------
+(no pins)                                  |VEVAL_IN **Mismatch**                      
+(no matching pin)                          |CLK                                        
+(no matching pin)                          |EN_REFERENCE                               
+(no matching pin)                          |EN_SEARCH                                  
+(no matching pin)                          |EN_WRITE                                   
+(no matching pin)                          |OUTPUT                                     
+(no matching pin)                          |VDD                                        
+(no matching pin)                          |VSS                                        
+(no matching pin)                          |reset                                      
+(no matching pin)                          |serial_in_addr                             
+(no matching pin)                          |serial_in_data                             
+---------------------------------------------------------------------------------------
+Cell pin lists for COMPLETE_PROYECT_FIG and COMPLETE_PROYECT_FIG altered to match.
+Circuits match uniquely.
