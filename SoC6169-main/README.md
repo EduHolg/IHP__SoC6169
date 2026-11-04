@@ -12,7 +12,7 @@ The design combines a **32 × 32 content-addressable memory (CAM)** and programm
 - **Physical top-level layout:** `chip_top`
 - **Full-custom CAM macro:** `COMPLETE_PROYECT_FIG`
 
-For the project overview, see the [root README](../README.md). For detailed specifications and interface information, see the [datasheet](../doc/Datasheet.md) and [specification](../doc/Specification.md).
+For the project overview, see the [root README](../README.md). For detailed specifications and interface information, see the [datasheet](../doc/Datasheet.md) and [specification](../doc/Specification.md). For operating the chip (power-up, protocol, threshold programming, functional test), see the [user guide](../doc/CAM_User_Guide.pdf).
 
 ## Architecture
 
@@ -32,8 +32,8 @@ The architecture supports investigation of approximate matching and time-domain 
 | [`librelane/`](librelane/) | RTL sources, synthesis/implementation configurations, pin ordering, and metrics for the digital blocks |
 | [`librelane/chip_top/`](librelane/chip_top/) | `chip_core.sv`, `chip_top.sv`, the chip-level LibreLane configuration, SDC, and CAM/pad macro views |
 | [`layout/klayout/`](layout/klayout/) | GDS views for the full-custom CAM macro and complete chip |
-| [`netlist/schematic/`](netlist/schematic/) | SPICE reference netlists, including `COMPLETE_PROYECT_FIG_lvs.spice` and `chip_top_lvs.spice` |
-| [`testbenches/tran/`](testbenches/tran/) | Transient testbench schematics and stimulus files |
+| [`netlist/schematic/`](netlist/schematic/) | SPICE reference netlists, including `COMPLETE_PROYECT_FIG_lvs.spice` and `chip_top_lvs.spice`, and `chip_top.spice` (Magic extraction of the final GDS, used for chip-level simulation) |
+| [`testbenches/tran/`](testbenches/tran/) | Transient testbench schematics and stimulus files, including the chip-level six-row test (`ctrl_in6_top.spice`, `ser_in6_ref16_top.spice`, 3.3 V levels) |
 | [`testbenches/spectre/`](testbenches/spectre/) | Spectre simulation inputs and vector files |
 | [`verification/drc/`](verification/drc/) | KLayout DRC output for the CAM macro and chip top |
 | [`verification/lvs/`](verification/lvs/) | KLayout LVS output for the CAM macro and chip top |
