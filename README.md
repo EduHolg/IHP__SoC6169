@@ -71,7 +71,7 @@ The chip supports the following functional interface groups:
 | Serial result output | Read out the results of the CAM comparisons |
 | Power and ground | Supply the core, I/O, and reference circuitry |
 
-**For exact pad names, signal polarity, voltage limits, and operating sequences, use [doc/Datasheet.md](doc/Datasheet.md).** This table is a functional summary, not a pin-by-pin bonding specification.
+**For exact pad names, signal polarity, voltage limits, and operating sequences, use [doc/Datasheet.md](doc/Datasheet.md) and the [user guide](doc/CAM_User_Guide.pdf).** This table is a functional summary, not a pin-by-pin bonding specification.
 
 ## Operating Principle
 
@@ -93,7 +93,7 @@ The reference settings allow the architecture to investigate Hamming-distance-ba
 | [`SoC6169-main/netlist/`](SoC6169-main/netlist/) | SPICE and LVS reference netlists |
 | [`SoC6169-main/testbenches/`](SoC6169-main/testbenches/) | Simulation testbenches and stimuli |
 | [`SoC6169-main/verification/`](SoC6169-main/verification/) | DRC, LVS, and netlist-comparison reports |
-| [`doc/`](doc/) | Datasheet, specification, submission metadata, and TRL checklist |
+| [`doc/`](doc/) | Datasheet, specification, user guide ([`CAM_User_Guide.pdf`](doc/CAM_User_Guide.pdf)), submission metadata, and TRL checklist |
 | [`release/v.1.0.0/`](release/v.1.0.0/) | Versioned release documentation and fabrication deliverables |
 
 ### Layout Preview
