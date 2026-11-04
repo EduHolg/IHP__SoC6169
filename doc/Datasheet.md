@@ -69,7 +69,8 @@ At the core boundary all digital signal pins are CMOS 0–1.2 V; on the packaged
 
 ### Pin details
 
-- **CLK**: all registers and the control FSM use the rising edge. Functionality was verified at 100 MHz. Do not exceed this frequency: the internal pre-discharge, precharge and evaluation phases last a fixed number of clock cycles and would become shorter than validated. The clock must run during reset and during every operation.
+- **CLK**: all registers and the control FSM use the rising edge. Functionality was verified at 100 MHz. Do not exceed this frequency: the internal pre-discharge, precharge and evaluation phases last a fixed number of clock cycles and would become shorter than validated. The clock must run during reset and during every operation. The pad ring does not accept a faster clock. Operation was simulated at 100 kHz, 1 MHz, 50 MHz and 100 MHz.
+
 - **reset**: active high. The control FSM goes to idle immediately (asynchronous reset) and the shift registers are cleared on the rising clock edges, so keep `reset` high for at least two clock cycles with CLK running. `OUTPUT` is 0 during reset. After a reset, rewrite the rows and the reference that will be used.
 - **EN_WRITE / EN_REFERENCE / EN_SEARCH**:
   - Sampled on the rising edge of CLK while the chip is idle.
