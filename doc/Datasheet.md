@@ -117,7 +117,9 @@ Because of the buffer delay, the effective threshold is below the number of diff
 
 ## 4. Verification results (transistor level, Spectre, lv MOS models shared by SG13G2 and SG13CMOS5L, 1.2 V, VEVAL_IN = 0.5 V, TT, 27 °C, 100 MHz)
 
-Sequence: 6 writes, reference programming and one search with read-out (testbenches in `SoCXXXX-main/testbenches/`: `tran/` xschem/ngspice and `spectre/`). Query Q = `0x0000FFFF`, reference `0xFFF8FFFF` (19 bits).
+Sequence: 6 writes, reference programming and one search with read-out (testbenches in `SoC6169-main/testbenches/`: `tran/` xschem/ngspice and `spectre/`). Query Q = `0x0000FFFF`, reference `0xFFFFFFFF` (16 bits, m_ref = 16).
+
+Chip-level stimuli (3.3 V levels, used with the `chip_top` netlist): `ctrl_in6_top.spice` and `ser_in6_ref16_top.spice` in `SoC6169-main/testbenches/tran/`. The full operating procedure is in `doc/CAM_User_Guide.pdf`.
 
 | Row | Stored word | HD to Q | Expected | COMP / OUTPUT |
 |---|---|---|---|---|
@@ -156,9 +158,9 @@ No setup or hold violations in any corner. One max-fanout warning in CAM_CONTROL
 | Core `COMPLETE_PROYECT_FIG` | DRC | KLayout 0.30.11, IHP SG13CMOS5L deck, table `main` + maximum rule set | 0 errors |
 | Core `COMPLETE_PROYECT_FIG` | LVS | KLayout 0.30.11, IHP SG13CMOS5L deck (forbidden-layer check passed), `COMPLETE_PROYECT_FIG.gds` vs `COMPLETE_PROYECT_FIG_lvs.spice` | Netlists match, 0 warnings |
 
-GDS files in `SoCXXXX-main/layout/klayout/`, netlists in `SoCXXXX-main/netlist/schematic/`, logs in `SoCXXXX-main/verification/drc/` and `SoCXXXX-main/verification/lvs/` (one `*_run_<top cell>/` folder per view). Schematic vs. layout netlist (netgen): `SoCXXXX-main/verification/netgen/` — circuits match uniquely.
+GDS files in `SoC6169-main-main/layout/klayout/`, netlists in `SoC6169-main-main/netlist/schematic/`, logs in `SoC6169-main-main/verification/drc/` and `SoC6169-main-main/verification/lvs/` (one `*_run_<top cell>/` folder per view). Schematic vs. layout netlist (netgen): `SoC6169-main-main/verification/netgen/` — circuits match uniquely.
 
-The chip-level LibreLane run (`SoCXXXX-main/librelane/chip_top/metrics.json`) also reports KLayout DRC 0, Netgen LVS 0 differences, 0 antenna violations (OpenROAD) and 0 power-grid violations.
+The chip-level LibreLane run (`SoC6169-main-main/librelane/chip_top/metrics.json`) also reports KLayout DRC 0, Netgen LVS 0 differences, 0 antenna violations (OpenROAD) and 0 power-grid violations.
 
 ## 7. Limitations and notes
 
@@ -166,5 +168,6 @@ The chip-level LibreLane run (`SoCXXXX-main/librelane/chip_top/metrics.json`) al
 - The effective threshold depends on VEVAL_IN (characterized only at 0.5 V), on the delay of the reference buffer and on the programmed reference; lower thresholds give slower discharge and need a longer evaluation window (`T_EVAL_MIN_PS` in `CAM_CONTROL`).
 - The digital blocks were hardened without clock-tree synthesis (`RUN_CTS = false`).
 - The transistor-level simulations cover the core only; the pads (level shifters, ESD, the ≈ 587 Ω series resistor on VEVAL_IN) are not included.
+- The six-row test was also run on the `chip_top` netlist extracted with Magic from the final GDS (pads included, no interconnect parasitics).
 - The pad named `rst_n_PAD` carries the active-high `reset` of the core.
 - The KLayout antenna check was disabled in the chip-level flow (IHP template default).
