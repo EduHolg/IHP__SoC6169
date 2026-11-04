@@ -108,11 +108,11 @@ During a search the reference row is compared against the fixed pattern `0xFFFF0
 - Rows whose match line has already discharged at the capture instant → mismatch (1).
 - Rows still precharged → match (0).
 
-Because of the buffer delay, the effective threshold is below the number of differing bits of the reference. With the V_EVAL driver (VEVAL_IN = 0.5 V, typical corner) the rule is: match if HD ≤ m_ref − 4, where m_ref is the number of bits in which the reference differs from 0xFFFF0000.
+Because of the buffer delay, the effective threshold is below the number of differing bits of the reference. With the V_EVAL driver (VEVAL_IN = 0.5 V, typical corner) the rule is: match if HD ≤ m_ref − 1, where m_ref is the number of bits in which the reference differs from 0xFFFF0000.
 
 | Reference word | Bits different from 0xFFFF0000 | Effective threshold (match if HD ≤) |
 |---|---|---|
-| 0xFFF8FFFF | 19 | 15 → HD ≤ 15 matches, HD ≥ 16 mismatches |
+| 0xFFFFFFFF | 16 | 15 → HD ≤ 15 matches, HD ≥ 16 mismatches |
 
 ## 4. Verification results (transistor level, Spectre, lv MOS models shared by SG13G2 and SG13CMOS5L, 1.2 V, VEVAL_IN = 0.5 V, TT, 27 °C, 100 MHz)
 
