@@ -80,8 +80,7 @@ The provided set of the quality assessment criteria, using TRL (Technology Readi
 
 - [Design specification](Specification.md)
 - [Datasheet](Datasheet.md)
-- [CAM user manual](CAM_user_manual.pdf)
-- [CAM quick guide](CAM_quick_guide.pdf)
+- [CAM user guide](doc/CAM_User_Guide.pdf)
 - [Mixed-signal schematics](../SoC6169-main/schematic/xschem/)
 - [RTL and LibreLane design files](../SoC6169-main/librelane/)
 - [Simulation testbenches](../SoC6169-main/testbenches/)
