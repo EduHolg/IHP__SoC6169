@@ -82,7 +82,7 @@ PC and VEVAL1 are active low (PC = 0 turns on the ML precharge PMOS; VEVAL1 = 0 
 
 Phase lengths are computed from the clock period: `N = ceil(T_min / CLK_PERIOD_PS)`, minimum 1. With `CLK_PERIOD_PS = 10000` (100 MHz): pre-discharge T = 2 ns → 1 cycle, precharge 4 ns → 1, word-line pulse 2 ns → 1, evaluation 30 ns → 3.
 
-`T_EVAL_MIN_PS` (30 ns) covers the time from the start of evaluation until the 32 COMP outputs are stable (≈ 21 ns in TT with the V_EVAL driver and reference 0xFFF8FFFF, ≈ 3.7× margin). It depends on the programmed threshold: lower thresholds discharge the reference ML more slowly.
+`T_EVAL_MIN_PS` (30 ns) covers the time from the start of evaluation until the 32 COMP outputs are stable (≈ 21 ns in TT post-layout with the V_EVAL driver and reference 0xFFFFFFFF, ≈ 1.4× margin, 8.8 ns). It depends on the programmed threshold: lower thresholds discharge the reference ML more slowly.
 
 ## 5. Implementation
 
