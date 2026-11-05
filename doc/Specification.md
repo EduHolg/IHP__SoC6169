@@ -82,7 +82,7 @@ PC and VEVAL1 are active low (PC = 0 turns on the ML precharge PMOS; VEVAL1 = 0 
 
 Phase lengths are computed from the clock period: `N = ceil(T_min / CLK_PERIOD_PS)`, minimum 1. With `CLK_PERIOD_PS = 10000` (100 MHz): pre-discharge T = 2 ns → 1 cycle, precharge 4 ns → 1, word-line pulse 2 ns → 1, evaluation 30 ns → 3.
 
-`T_EVAL_MIN_PS` (30 ns) covers the time from the start of evaluation until the 32 COMP outputs are stable (≈ 21 ns in TT post-layout with the V_EVAL driver and reference 0xFFFFFFFF, ≈ 1.4× margin, 8.8 ns). It depends on the programmed threshold: lower thresholds discharge the reference ML more slowly.
+`T_EVAL_MIN_PS` (30 ns) covers the time from the start of evaluation until the 32 COMP outputs are stable: ≈ 8 ns pre-layout in TT (V_EVAL driver, reference 0xFFF8FFFF, ≈ 3.7× margin) and ≈ 21 ns post-layout (reference 0xFFFFFFFF, ≈ 1.4× margin, 8.8 ns). It depends on the programmed threshold: lower thresholds discharge the reference ML more slowly.
 
 ## 5. Implementation
 
@@ -126,8 +126,7 @@ The core GDS is exported with its origin at (0, 0) and pin stubs on its edge (Me
 ## 6. Verification
 
 1. Each digital block verified separately at transistor level (address register + decoder, data register + reference MUX, control unit, full digital chain with emulated COMP).
-2. Full chip: Spectre transient, lv MOS models (same files in SG13G2 and SG13CMOS5L), TT, 1.2 V, VEVAL_IN = 0.5 V, 27 °C, 100 MHz, 0–3400 ns, eight consecutive operations (6 writes, reference 0xFFFFFFFF with 16 bits, search 0x0000FFFF + read). Testbenches: `SoC6169-main/testbenches/tran/COMPLETE_PROYECT_TB.sch` (xschem/ngspice) and `SoC6169-main/testbenches/spectre/` (Spectre) (see the README there).
- The same six-row test was also run at chip level on the Magic-extracted `chip_top` netlist (pads included, no interconnect parasitics) with `ctrl_in6_top.spice` and `ser_in6_ref16_top.spice`; see [CAM_User_Guide.pdf](CAM_User_Guide.pdf) for the operating procedure.
+2. Full chip: Spectre transient, lv MOS models (same files in SG13G2 and SG13CMOS5L), TT, 1.2 V, VEVAL_IN = 0.5 V, 27 °C, 100 MHz, 0–3400 ns, eight consecutive operations (6 writes, reference 0xFFF8FFFF with 19 bits, search 0x0000FFFF + read). Testbenches: `SoC6169-main/testbenches/tran/COMPLETE_PROYECT_TB.sch` (xschem/ngspice) and `SoC6169-main/testbenches/spectre/` (Spectre) (see the README there). The same six-row test was also run at chip level on the Magic-extracted `chip_top` netlist (pads included, no interconnect parasitics, reference 0xFFFFFFFF, 16 bits) with `ctrl_in6_top.spice` and `ser_in6_ref16_top.spice`; see [CAM_User_Guide.pdf](CAM_User_Guide.pdf) for the operating procedure.
 3. Physical: DRC and LVS with the IHP SG13CMOS5L KLayout decks, all clean (LVS forbidden-layer check passed), on both views: the full chip with pad ring (`chip_top`) and the core (`COMPLETE_PROYECT_FIG`). Each digital block DRC/LVS/antenna clean in LibreLane.
 
 Results are summarized in [Datasheet.md](Datasheet.md).
