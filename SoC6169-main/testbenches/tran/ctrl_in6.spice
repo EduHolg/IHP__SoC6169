@@ -1,6 +1,5 @@
-simulator lang=spice
 * =====================================================================
-* Control prueba 6 filas: reset 0-20 ns, un EN cada 370 ns (20 ns)
+* Control for the 6-row test: reset 0-20 ns, one EN pulse every 370 ns (20 ns wide)
 * WRITE [30, 400, 770, 1140, 1510, 1880]  REFERENCE [2250]  SEARCH [2620]
 * =====================================================================
 

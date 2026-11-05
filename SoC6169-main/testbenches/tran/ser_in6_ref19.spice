@@ -1,20 +1,19 @@
-simulator lang=spice
 * =====================================================================
-* PRUEBA 6 FILAS: 6 WRITE + REFERENCE (19 mm) + SEARCH (query 0x0000FFFF)
-* Datos de WRITE/REFERENCE NORMALES (usar cuando se corrija la polaridad)
-* Usar con ctrl_in6.spice. Transitorio: 0 a 3400 ns
+* 6-ROW TEST: 6 WRITE + REFERENCE (19 mm) + SEARCH (query 0x0000FFFF)
+* WRITE/REFERENCE data in NORMAL form (the input XNOR handles the polarity)
+* Use with ctrl_in6.spice. Transient: 0 to 3400 ns
 *
-* W fila  0  EN 30-50 ns  E0=35  dato=0x0000FFFF  addr=00000  mm=0
-* W fila  5  EN 400-420 ns  E0=405  dato=0x0000E000  addr=00101  mm=13
-* W fila 13  EN 770-790 ns  E0=775  dato=0x00FF01FF  addr=01101  mm=15
-* W fila 20  EN 1140-1160 ns  E0=1145  dato=0x00FF00FF  addr=10100  mm=16
-* W fila 22  EN 1510-1530 ns  E0=1515  dato=0x00030000  addr=10110  mm=18
-* W fila 31  EN 1880-1900 ns  E0=1885  dato=0xFFFF0000  addr=11111  mm=32
-* REFERENCE  EN 2250-2270 ns  E0=2255  dato=0xFFF8FFFF  mm=19
-* SEARCH     EN 2620-2640 ns  E0=2625  dato=0x0000FFFF
+* W row  0  EN 30-50 ns  E0=35  data=0x0000FFFF  addr=00000  mm=0
+* W row  5  EN 400-420 ns  E0=405  data=0x0000E000  addr=00101  mm=13
+* W row 13  EN 770-790 ns  E0=775  data=0x00FF01FF  addr=01101  mm=15
+* W row 20  EN 1140-1160 ns  E0=1145  data=0x00FF00FF  addr=10100  mm=16
+* W row 22  EN 1510-1530 ns  E0=1515  data=0x00030000  addr=10110  mm=18
+* W row 31  EN 1880-1900 ns  E0=1885  data=0xFFFF0000  addr=11111  mm=32
+* REFERENCE  EN 2250-2270 ns  E0=2255  data=0xFFF8FFFF  mm=19
+* SEARCH     EN 2620-2640 ns  E0=2625  data=0x0000FFFF
 *
-* mm = mismatches efectivos en la busqueda (umbral efectivo ~16)
-* Esperado: COMP0=0 COMP5=0 COMP13=0 | COMP20=1 COMP22=1 COMP31=1
+* mm = effective mismatches in the search (effective threshold between 15 and 16)
+* Expected: COMP0=0 COMP5=0 COMP13=0 | COMP20=1 COMP22=1 COMP31=1
 * =====================================================================
 
 VSADDR serial_in_addr 0 PWL(
