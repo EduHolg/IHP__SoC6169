@@ -7,7 +7,7 @@ This directory contains the **design and verification files** for *Reconfigurabl
 The design combines a **32 × 32 content-addressable memory (CAM)** and programmable reference/time-domain sensing circuitry with digital logic for configuration, control, and readout. Its purpose is to investigate in-memory similarity evaluation relevant to XNOR/popcount operations used in binary neural networks (BNNs).
 
 - **IP repository:** [`IHP__SoC6169`](https://github.com/EduHolg/IHP__SoC6169)
-- **Design and implementation:** Emilio Yanchapaxi
+- **Design and implementation:** Nicolás Yanchapaxi
 - **Supervisors:** Eduardo Holguín and Esteban Garzón
 - **Physical top-level layout:** `chip_top`
 - **Full-custom CAM macro:** `COMPLETE_PROYECT_FIG`
