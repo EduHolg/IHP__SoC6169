@@ -15,7 +15,7 @@ The prototype targets the **IHP SG13CMOS5L 130 nm** technology and integrates th
 
 ## Team
 
-- **Design and implementation:** Emilio Yanchapaxi
+- **Design and implementation:** Nicolás Yanchapaxi
 - **Supervisors:** Eduardo Holguín and Esteban Garzón
 
 ## Project Description
