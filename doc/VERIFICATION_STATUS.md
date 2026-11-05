@@ -5,7 +5,7 @@
 **Technology:** IHP SG13CMOS5L (130 nm)  
 **Design top cell:** `chip_top`  
 **Custom CAM macro:** `COMPLETE_PROYECT_FIG`  
-**Design and implementation:** Emilio Yanchapaxi  
+**Design and implementation:** Nicolás Yanchapaxi  
 **Supervision:** Eduardo Holguín and Esteban Garzón  
 **Verification records:** October 22, 2026
 
