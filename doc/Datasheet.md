@@ -70,7 +70,6 @@ At the core boundary all digital signal pins are CMOS 0–1.2 V; on the packaged
 ### Pin details
 
 - **CLK**: all registers and the control FSM use the rising edge. Functionality was verified at 100 MHz. Do not exceed this frequency: the internal pre-discharge, precharge and evaluation phases last a fixed number of clock cycles and would become shorter than validated. The clock must run during reset and during every operation. The pad ring does not accept a faster clock. Operation was simulated at 100 kHz, 1 MHz, 50 MHz and 100 MHz.
-
 - **reset**: active high. The control FSM goes to idle immediately (asynchronous reset) and the shift registers are cleared on the rising clock edges, so keep `reset` high for at least two clock cycles with CLK running. `OUTPUT` is 0 during reset. After a reset, rewrite the rows and the reference that will be used.
 - **EN_WRITE / EN_REFERENCE / EN_SEARCH**:
   - Sampled on the rising edge of CLK while the chip is idle.
@@ -109,17 +108,18 @@ During a search the reference row is compared against the fixed pattern `0xFFFF0
 - Rows whose match line has already discharged at the capture instant → mismatch (1).
 - Rows still precharged → match (0).
 
-Because of the buffer delay, the effective threshold is below the number of differing bits of the reference. With the V_EVAL driver (VEVAL_IN = 0.5 V, typical corner) the rule is: match if HD ≤ m_ref − 1, where m_ref is the number of bits in which the reference differs from 0xFFFF0000.
+Because of the buffer delay, the effective threshold is below the number of differing bits of the reference. With the V_EVAL driver (VEVAL_IN = 0.5 V, typical corner) the rule for the final chip (post-layout) is: match if HD ≤ m_ref − 1, where m_ref is the number of bits in which the reference differs from 0xFFFF0000. In the pre-layout simulation of the core the rule was HD ≤ m_ref − 4.
 
 | Reference word | Bits different from 0xFFFF0000 | Effective threshold (match if HD ≤) |
 |---|---|---|
-| 0xFFFFFFFF | 16 | 15 → HD ≤ 15 matches, HD ≥ 16 mismatches |
+| 0xFFFFFFFF (final chip, post-layout) | 16 | 15 → HD ≤ 15 matches, HD ≥ 16 mismatches |
+| 0xFFF8FFFF (pre-layout simulation) | 19 | 15 → HD ≤ 15 matches, HD ≥ 16 mismatches |
 
 ## 4. Verification results (transistor level, Spectre, lv MOS models shared by SG13G2 and SG13CMOS5L, 1.2 V, VEVAL_IN = 0.5 V, TT, 27 °C, 100 MHz)
 
-Sequence: 6 writes, reference programming and one search with read-out (testbenches in `SoC6169-main/testbenches/`: `tran/` xschem/ngspice and `spectre/`). Query Q = `0x0000FFFF`, reference `0xFFFFFFFF` (16 bits, m_ref = 16).
+Sequence: 6 writes, reference programming and one search with read-out (testbenches in `SoC6169-main/testbenches/`: `tran/` xschem/ngspice and `spectre/`). Query Q = `0x0000FFFF`, reference `0xFFF8FFFF` (19 bits).
 
-Chip-level stimuli (3.3 V levels, used with the `chip_top` netlist): `ctrl_in6_top.spice` and `ser_in6_ref16_top.spice` in `SoC6169-main/testbenches/tran/`. The full operating procedure is in `doc/CAM_User_Guide.pdf`.
+Chip-level stimuli (3.3 V levels, used with the `chip_top` netlist): `ctrl_in6_top.spice` and `ser_in6_ref16_top.spice` in `SoC6169-main/testbenches/tran/`. The chip-level run uses reference `0xFFFFFFFF` (16 bits) and gives the same expected outputs. The full operating procedure is in `doc/CAM_User_Guide.pdf`.
 
 | Row | Stored word | HD to Q | Expected | COMP / OUTPUT |
 |---|---|---|---|---|
@@ -158,9 +158,9 @@ No setup or hold violations in any corner. One max-fanout warning in CAM_CONTROL
 | Core `COMPLETE_PROYECT_FIG` | DRC | KLayout 0.30.11, IHP SG13CMOS5L deck, table `main` + maximum rule set | 0 errors |
 | Core `COMPLETE_PROYECT_FIG` | LVS | KLayout 0.30.11, IHP SG13CMOS5L deck (forbidden-layer check passed), `COMPLETE_PROYECT_FIG.gds` vs `COMPLETE_PROYECT_FIG_lvs.spice` | Netlists match, 0 warnings |
 
-GDS files in `SoC6169-main-main/layout/klayout/`, netlists in `SoC6169-main-main/netlist/schematic/`, logs in `SoC6169-main-main/verification/drc/` and `SoC6169-main-main/verification/lvs/` (one `*_run_<top cell>/` folder per view). Schematic vs. layout netlist (netgen): `SoC6169-main-main/verification/netgen/` — circuits match uniquely.
+GDS files in `SoC6169-main/layout/klayout/`, netlists in `SoC6169-main/netlist/schematic/`, logs in `SoC6169-main/verification/drc/` and `SoC6169-main/verification/lvs/` (one `*_run_<top cell>/` folder per view). Schematic vs. layout netlist (netgen): `SoC6169-main/verification/netgen/` — circuits match uniquely.
 
-The chip-level LibreLane run (`SoC6169-main-main/librelane/chip_top/metrics.json`) also reports KLayout DRC 0, Netgen LVS 0 differences, 0 antenna violations (OpenROAD) and 0 power-grid violations.
+The chip-level LibreLane run (`SoC6169-main/librelane/chip_top/metrics.json`) also reports KLayout DRC 0, Netgen LVS 0 differences, 0 antenna violations (OpenROAD) and 0 power-grid violations.
 
 ## 7. Limitations and notes
 
