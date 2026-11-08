@@ -4,15 +4,17 @@
   "technology": "IHP",
   "unique_id": "6169",
   "license": "Apache-2.0",
-  "trl": 0,
-  "sealring_x": 1.0,
-  "sealring_y": 1.0,
-  "repository": "",
+  "trl": 5,
+  "sealring_x": 1200.0,
+  "sealring_y": 1200.0,
+  "repository": "https://github.com/EduHolg/IHP__SoC6169",
   "pdk_version": "",
   "process": "SG13CMOS",
   "dependencies": {},
-  "tools": {},
-  "top_cell_name": "SoC6169",
+  "tools": {
+    "klayout": "0.30.11"
+  },
+  "top_cell_name": "chip_top",
   "release": {
     "version": "v.1.0.0",
     "gds": "release/v.1.0.0/gds",

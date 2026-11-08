@@ -15,7 +15,7 @@ The prototype targets the **IHP SG13CMOS5L 130 nm** technology and integrates th
 
 ## Team
 
-- **Design and implementation:** Nicolás Yanchapaxi
+- **Design and implementation:** Emilio Yanchapaxi
 - **Supervisors:** Eduardo Holguín and Esteban Garzón
 
 ## Project Description
@@ -73,6 +73,32 @@ The chip supports the following functional interface groups:
 
 **For exact pad names, signal polarity, voltage limits, and operating sequences, use [doc/Datasheet.md](doc/Datasheet.md) and the [user guide](doc/CAM_User_Guide.pdf).** This table is a functional summary, not a pin-by-pin bonding specification.
 
+## Pad Ring
+
+19 bondpads of 70 × 70 µm. Coordinates are the pad centers in µm, origin at the lower-left corner of the die (`chip_top`, 1200 × 1200 µm).
+
+| # | Pad | Core pin | Side | x | y |
+| --- | --- | --- | --- | --- | --- |
+| 1 | `clk_PAD` | CLK | West | 103 | 388 |
+| 2 | `rst_n_PAD` | reset (active high) | West | 103 | 494 |
+| 3 | `input_PAD[0]` | EN_WRITE | West | 103 | 600 |
+| 4 | `input_PAD[1]` | EN_REFERENCE | West | 103 | 706 |
+| 5 | `input_PAD[2]` | EN_SEARCH | West | 103 | 812 |
+| 6 | `analog_PAD` | VEVAL_IN | North | 388 | 1097 |
+| 7 | `input_PAD[4]` | serial_in_data | North | 494 | 1097 |
+| 8 | IOVDD | — | North | 600 | 1097 |
+| 9 | IOVSS | — | North | 706 | 1097 |
+| 10 | IOVDD | — | North | 812 | 1097 |
+| 11 | `output_PAD` | OUTPUT | East | 1097 | 408 |
+| 12 | VDD | VDD | East | 1097 | 536 |
+| 13 | VSS | VSS | East | 1097 | 664 |
+| 14 | VDD | VDD | East | 1097 | 792 |
+| 15 | `input_PAD[3]` | serial_in_addr | South | 388 | 103 |
+| 16 | VDD | VDD | South | 494 | 103 |
+| 17 | VSS | VSS | South | 600 | 103 |
+| 18 | IOVDD | — | South | 706 | 103 |
+| 19 | IOVSS | — | South | 812 | 103 |
+
 ## Operating Principle
 
 1. **Program the memory:** Load a row address and data word, then initiate a write operation.
@@ -102,7 +128,7 @@ The reference settings allow the architecture to investigate Hamming-distance-ba
 
 ## Design Status
 
-The repository includes the custom CAM schematics, digital RTL, full-chip GDS layout, simulation files, and KLayout physical-verification reports. The previously reviewed full-chip **DRC and LVS logs report successful results**, but those reports are not equivalent to a completed foundry rejection test or fabrication approval.
+The repository includes the custom CAM schematics, digital RTL, full-chip GDS layout, simulation files, and KLayout physical-verification reports. The full-chip **DRC and LVS logs report successful results**, but those reports are not equivalent to a completed foundry rejection test or fabrication approval.
 
 Before final MPW acceptance, the versioned release files, submission metadata, applicable sign-off checks, and foundry review must be completed or confirmed. No post-fabrication measurement results are claimed here.
 

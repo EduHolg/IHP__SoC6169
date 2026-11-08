@@ -7,7 +7,7 @@ This directory contains the **design and verification files** for *Reconfigurabl
 The design combines a **32 × 32 content-addressable memory (CAM)** and programmable reference/time-domain sensing circuitry with digital logic for configuration, control, and readout. Its purpose is to investigate in-memory similarity evaluation relevant to XNOR/popcount operations used in binary neural networks (BNNs).
 
 - **IP repository:** [`IHP__SoC6169`](https://github.com/EduHolg/IHP__SoC6169)
-- **Design and implementation:** Nicolás Yanchapaxi
+- **Design and implementation:** Emilio Yanchapaxi
 - **Supervisors:** Eduardo Holguín and Esteban Garzón
 - **Physical top-level layout:** `chip_top`
 - **Full-custom CAM macro:** `COMPLETE_PROYECT_FIG`
@@ -38,8 +38,6 @@ The architecture supports investigation of approximate matching and time-domain 
 | [`verification/drc/`](verification/drc/) | KLayout DRC output for the CAM macro and chip top |
 | [`verification/lvs/`](verification/lvs/) | KLayout LVS output for the CAM macro and chip top |
 | [`verification/netgen/`](verification/netgen/) | Additional netlist-comparison results |
-| [`timing/`](timing/) | Reserved for timing-related design outputs |
-| [`model/`](model/) | Reserved for compact or behavioral model views |
 
 ### Digital implementation blocks
 
@@ -66,7 +64,7 @@ The existing chip integration uses:
 - **Top GDS:** [`layout/klayout/chip_top.gds`](layout/klayout/chip_top.gds)
 - **CAM macro GDS:** [`layout/klayout/COMPLETE_PROYECT_FIG.gds`](layout/klayout/COMPLETE_PROYECT_FIG.gds)
 
-These dimensions are from the project documentation and should not be substituted automatically for the **seal-ring bounding-box dimensions** requested in `../doc/info.json`.
+These dimensions are from the project documentation and are the same as the `sealring_x` / `sealring_y` values (1200 µm) recorded in `../doc/info.json`.
 
 ## Verification Evidence
 
@@ -74,12 +72,12 @@ The repository contains DRC and LVS reports for both the CAM macro and integrate
 
 | Check | Report location | Current interpretation |
 | --- | --- | --- |
-| Full-chip DRC | [`verification/drc/drc_run_chip_top/`](verification/drc/drc_run_chip_top/) | Previously reviewed run reports no DRC violations |
-| Full-chip LVS | [`verification/lvs/lvs_run_chip_top/`](verification/lvs/lvs_run_chip_top/) | Previously reviewed run reports matching netlists |
+| Full-chip DRC | [`verification/drc/drc_run_chip_top/`](verification/drc/drc_run_chip_top/) | Run reports no DRC violations |
+| Full-chip LVS | [`verification/lvs/lvs_run_chip_top/`](verification/lvs/lvs_run_chip_top/) | Run reports matching netlists |
 | CAM macro DRC | [`verification/drc/drc_run_COMPLETE_PROYECT_FIG/`](verification/drc/drc_run_COMPLETE_PROYECT_FIG/) | Supporting physical-verification run |
 | CAM macro LVS | [`verification/lvs/lvs_run_COMPLETE_PROYECT_FIG/`](verification/lvs/lvs_run_COMPLETE_PROYECT_FIG/) | Supporting netlist-comparison run |
 
-**Scope:** These statements describe the reports present in the project; they are not a new independent verification run or foundry approval. The IHP minimal precheck, antenna-related requirements, final export settings, and rejection test need separate confirmation before tape-out. For the submission checklist, see [`../doc/VERIFICATION_STATUS.md`](../doc/VERIFICATION_STATUS.md) **if that document has been added to the repository**.
+**Scope:** These statements describe the reports present in the project; they are not a new independent verification run or foundry approval. The IHP minimal precheck, antenna-related requirements, final export settings, and rejection test need separate confirmation before tape-out. For the submission checklist, see [`../doc/VERIFICATION_STATUS.md`](../doc/VERIFICATION_STATUS.md).
 
 ## Preparing a Release
 

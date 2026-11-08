@@ -4,7 +4,7 @@
 **Project:** Reconfigurable XPCAM-Based In-Memory Computing for Binary Neural Networks  
 **Technology:** IHP SG13CMOS5L (130 nm)  
 **Category:** Mixed-Signal / System-on-Chip  
-**Design and implementation:** Nicolás Yanchapaxi  
+**Design and implementation:** Emilio Yanchapaxi  
 **Supervisors:** Eduardo Holguín and Esteban Garzón  
 **Repository:** [EduHolg/IHP__SoC6169](https://github.com/EduHolg/IHP__SoC6169)
 
@@ -56,6 +56,15 @@ Physical verification was performed using the SG13CMOS5L design flow. The archiv
 - **Layout Versus Schematic (LVS):** The extracted layout and reference netlist match for `chip_top`.
 
 The corresponding logs are available in the repository under [`verification/drc/drc_run_chip_top/`](../../SoC6169-main/verification/drc/drc_run_chip_top/) and [`verification/lvs/lvs_run_chip_top/`](../../SoC6169-main/verification/lvs/lvs_run_chip_top/). Separate verification records for the full-custom CAM macro are also included.
+
+## Release contents and checksums
+
+| File | MD5 |
+| --- | --- |
+| `gds/chip_top.gds` | `a7abb9627286a2e852cd24cee3327f42` |
+| `netlist/chip_top_lvs.spice` | `fe9057fda00afe42f2db7b3036cb84cd` |
+
+`doc/` contains the datasheet, the specification, the user guide (`CAM_User_Guide.pdf`) and the layout images.
 
 ## Documentation
 

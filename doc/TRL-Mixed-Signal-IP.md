@@ -1,22 +1,25 @@
 # Mixed-Signal IP Quality Assessment using TRL scale
 
-The provided set of the quality assessment criteria, using TRL (Technology Readiness Level) scale, is a tool for designers to auto evaluate a submitted design. The purpose of this tool is to
-have a short overview of IP in terms of its maturity.
+**Project:** Reconfigurable XPCAM-Based In-Memory Computing for Binary Neural Networks  
+**IP identifier:** `IHP__SoC6169`  
+**Technology:** IHP SG13CMOS5L (130 nm)  
+**Design and implementation:** Emilio Yanchapaxi  
+**Supervision:** Eduardo Holguín and Esteban Garzón
 
----
+The provided set of the quality assessment criteria, using TRL (Technology Readiness Level) scale, is a tool for designers to auto evaluate a submitted design. The purpose of this tool is to have a short overview of IP in terms of its maturity.
 
 ## TRL1 - Basic principles observed
 
-- [ ] Is the IP functionality clearly described?
-- [ ] Is the IP principle of operation explained in detail?
+- [x] Is the IP functionality clearly described?
+- [x] Is the IP principle of operation explained in detail?
 - [ ] Are the IP architecture design equations fully listed?
 - [ ] Do authors supply any mixed-signal HDL functional model (e.g. Verilog-A) of the IP?
-- [ ] Are functional simulation results of the IP reported for a typical case?
+- [x] Are functional simulation results of the IP reported for a typical case?
 
 ## TRL2 - Concept formulation
 
-- [ ] Is the IP architecture described at block level?
-- [ ] Are the specifications of each individual block of the IP architecture clearly identified?
+- [x] Is the IP architecture described at block level?
+- [x] Are the specifications of each individual block of the IP architecture clearly identified?
 - [ ] If the IP architecture can be configured by means of internal registers, is their mapping declared?
 - [ ] Do authors supply a complete test bench to validate the IP block-level architecture?
 - [ ] Is any verification procedure given to check the IP block-level performance figures?
@@ -24,11 +27,11 @@ have a short overview of IP in terms of its maturity.
 
 ## TRL3 - Proof of concept at schematic level
 
-- [ ] Are the IP schematics available at transistor level (analog parts) and gate level (digital parts)?
+- [x] Are the IP schematics available at transistor level (analog parts) and gate level (digital parts)?
 - [ ] Are all dependencies of the IP schematics on logic libraries declared?
 - [ ] Are the analog IP ports fully specified at electrical level?
-- [ ] Are the digital IP ports fully specified at logical level (e.g. protocols)?
-- [ ] Do authors supply a mixed-signal test bench to validate the IP schematics?
+- [x] Are the digital IP ports fully specified at logical level (e.g. protocols)?
+- [x] Do authors supply a mixed-signal test bench to validate the IP schematics?
 - [ ] Is any verification procedure given to check the IP schematic performance figures?
 - [ ] Are mixed-signal simulation results of the IP schematics reported for a typical case?
 
@@ -41,22 +44,22 @@ have a short overview of IP in terms of its maturity.
 
 ## TRL5 - Full design at layout level
 
-- [ ] Is the IP complete layout available?
+- [x] Is the IP complete layout available?
 - [ ] Are all dependencies of the IP layout on logic libraries declared?
-- [ ] Do authors supply a clean DRC report?
-- [ ] Do authors supply a clean LVS report?
+- [x] Do authors supply a clean DRC report?
+- [x] Do authors supply a clean LVS report?
 - [ ] Are post-layout mixed-signal simulation results of the IP layout reported for PVT corners?
 
 ## TRL6 - Full design for SoC integration
 
-- [ ] Does the IP come with suitable descriptors for digital-on-top integration (e.g. Liberty, LEF)?
+- [x] Does the IP come with suitable descriptors for digital-on-top integration (e.g. Liberty, LEF)?
 - [ ] Is the IP incorporating any BIST mechanism? If so, is it properly documented?
-- [ ] Does the IP document fully define its digital interface?
+- [x] Does the IP document fully define its digital interface?
 
 ## TRL7 - Lab demonstrator prototype
 
-- [ ] Has any dedicated test chip been designed for the hard IP?
-- [ ] Is the hard IP test chip fully documented (e.g. pad ring)?
+- [x] Has any dedicated test chip been designed for the hard IP?
+- [x] Is the hard IP test chip fully documented (e.g. pad ring)?
 - [ ] Are experimental results available from the IP dedicated test chip (Silicon proven)?
 - [ ] Do authors supply any comprehensive comparison between IP test chip and post-layout results?
 
@@ -69,6 +72,18 @@ have a short overview of IP in terms of its maturity.
 ## TRL9 - Commercial application
 
 - [ ] Are the IP authors providing support for bug fixing or enhancement requests?
-- [ ] Does the IP documentation include any training materials?
+- [x] Does the IP documentation include any training materials?
 - [ ] Are the EDA tools and versions used for developing the IP documented?
 - [ ] Is the hard IP integrated in any commercial IC?
+
+## Supporting documentation
+
+- [Design specification](Specification.md)
+- [Datasheet](Datasheet.md)
+- [CAM user guide](CAM_User_Guide.pdf)
+- [Mixed-signal schematics](../SoC6169-main/schematic/xschem/)
+- [RTL and LibreLane design files](../SoC6169-main/librelane/)
+- [Simulation testbenches](../SoC6169-main/testbenches/)
+- [Full-chip layout](../SoC6169-main/layout/klayout/chip_top.gds)
+- [Full-chip DRC report](../SoC6169-main/verification/drc/drc_run_chip_top/chip_top_chip_top_main.log)
+- [Full-chip LVS report](../SoC6169-main/verification/lvs/lvs_run_chip_top/chip_top.log)

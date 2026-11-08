@@ -33,7 +33,7 @@ CAM_CONTROL (FSM): CLK, reset, EN_WRITE, EN_REFERENCE, EN_SEARCH ──► shift
                    decoder_enable, WL_REF, REF_SEL, PC, VEVAL1 (→ V_EVAL driver → VEVAL to array and reference row), output_enable
 ```
 
-### 3.1 Digital blocks (RTL in `SoC6169-main/rtl/`, xschem in `SoC6169-main/schematic/xschem/`)
+### 3.1 Digital blocks (RTL in `SoC6169-main/librelane/<block>/src/`, xschem in `SoC6169-main/schematic/xschem/`)
 
 | Block | Function |
 |---|---|
@@ -41,7 +41,7 @@ CAM_CONTROL (FSM): CLK, reset, EN_WRITE, EN_REFERENCE, EN_SEARCH ──► shift
 | `SHIFT_5` | 5-bit address shift register, MSB first, loaded during the first five cycles of a write. |
 | `shift_register_32` | 32-bit data shift register; drives the 32 search lines SL and their complements SLN. |
 | `decoder_5to32` | Converts the 5-bit address into one active word line WL, only while `decoder_enable` = 1. |
-| `REFERENCE_MUX` | 32 × 2:1. `REF_SEL` = 0: reference row sees SL/SLN (so it can be written like a normal row). `REF_SEL` = 1 (search): applies the fixed pattern `0xFFFF0000` / `0x0000FFFF`. |
+| `REFERENCE_MUX` | 64 × 2:1 (32 for `RSL`, 32 for `RSLN`). `REF_SEL` = 0: reference row sees SL/SLN (so it can be written like a normal row). `REF_SEL` = 1 (search): applies the fixed pattern `0xFFFF0000` / `0x0000FFFF`. |
 | `OUTPUT` | Serializer: during the read phase outputs COMP[31 − counter], one bit per cycle. |
 
 A 2-input XNOR at the top level (`serial_in_data` ⊙ `REF_SEL` → data shift register input) adjusts the data polarity needed by the cells, so the user always sends data in normal logic form.
@@ -82,7 +82,7 @@ PC and VEVAL1 are active low (PC = 0 turns on the ML precharge PMOS; VEVAL1 = 0 
 
 Phase lengths are computed from the clock period: `N = ceil(T_min / CLK_PERIOD_PS)`, minimum 1. With `CLK_PERIOD_PS = 10000` (100 MHz): pre-discharge T = 2 ns → 1 cycle, precharge 4 ns → 1, word-line pulse 2 ns → 1, evaluation 30 ns → 3.
 
-`T_EVAL_MIN_PS` (30 ns) covers the time from the start of evaluation until the 32 COMP outputs are stable: ≈ 8 ns pre-layout in TT (V_EVAL driver, reference 0xFFF8FFFF, ≈ 3.7× margin) and ≈ 21 ns post-layout (reference 0xFFFFFFFF, ≈ 1.4× margin, 8.8 ns). It depends on the programmed threshold: lower thresholds discharge the reference ML more slowly.
+`T_EVAL_MIN_PS` (30 ns) covers the time from the start of evaluation until the 32 COMP outputs are stable: ≈ 8 ns pre-layout in TT (V_EVAL driver, reference 0xFFF8FFFF, ≈ 3.7× margin) and ≈ 21 ns post-layout (reference 0xFFFFFFFF, ≈ 1.4× margin, i.e. 8.8 ns of slack). It depends on the programmed threshold: lower thresholds discharge the reference ML more slowly.
 
 ## 5. Implementation
 
