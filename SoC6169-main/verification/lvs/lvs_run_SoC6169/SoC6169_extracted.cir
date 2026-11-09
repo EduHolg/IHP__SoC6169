@@ -1,6 +1,6 @@
-* Extracted by KLayout with SG13CMOS5L LVS runset on : 22/10/2026 03:30
+* Extracted by KLayout with SG13CMOS5L LVS runset on : 09/11/2026 16:59
 
-.SUBCKT chip_top A A|A0|A2|A_N|B|C|X A|A1|A2|B2|Y A|A1|A_N|B|S|X A|A1|B1|C|D|X
+.SUBCKT SoC6169 A A|A0|A2|A_N|B|C|X A|A1|A2|B2|Y A|A1|A_N|B|S|X A|A1|B1|C|D|X
 + A|A1|Q A|A1|X A|A1|Y A|A2|B|X A|A2|B|Y A|A2|B|Y$1 A|A2|Q A|A2|Y
 + A|A_N|B|B1|Q|S A|A_N|B|C|Q A|A_N|B|C|X A|A_N|B|C|X$1 A|A_N|C|X A|B|B1|X
 + A|B|B2|X A|B|B_N|C|X A|B|B_N|X A|B|B_N|X$1 A|B|B_N|X$2 A|B|B_N|X$3 A|B|C|X
@@ -42160,4 +42160,4 @@ R$34246 IOVSS|anode|cathode|guard|iovss|minus VGND|VSS|anode|cathode|vss ptap1
 + A=173395.07965p P=40827.778u
 R$34322 VGND|VSS|anode|cathode|vss VGND|VSS|anode|cathode|vss ptap1 A=726.8736p
 + P=4895.216u
-.ENDS chip_top
+.ENDS SoC6169

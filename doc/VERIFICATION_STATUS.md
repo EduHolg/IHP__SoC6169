@@ -30,9 +30,13 @@ The DRC run checks the physical `SoC6169` layout against the SG13CMOS5L technolo
 
 **Evidence:**
 
-- [Full-chip DRC main log](../SoC6169-main/verification/drc/drc_run_chip_top/chip_top_chip_top_main.log)
-- [SG13CMOS5L DRC report](../SoC6169-main/verification/drc/drc_run_chip_top/chip_top_chip_top_sg13cmos5l_maximal.log)
-- [KLayout DRC results database](../SoC6169-main/verification/drc/drc_run_chip_top/chip_top_chip_top_full.lyrdb)
+Re-run on 2026-11-09 with the renamed top cell `SoC6169` (KLayout 0.30.11, `main` + maximal rule set, recommended rules on): PASS, 0 violations.
+
+- [DRC runner summary](../SoC6169-main/verification/drc/drc_run_SoC6169/drc_run_2026_11_09_16_22_16.log)
+- [Full-chip DRC main log](../SoC6169-main/verification/drc/drc_run_SoC6169/SoC6169_SoC6169_main.log)
+- [SG13CMOS5L maximal DRC log](../SoC6169-main/verification/drc/drc_run_SoC6169/SoC6169_SoC6169_sg13cmos5l_maximal.log)
+- [KLayout DRC results database](../SoC6169-main/verification/drc/drc_run_SoC6169/SoC6169_SoC6169_full.lyrdb)
+
 
 ### Layout Versus Schematic (LVS)
 
@@ -40,17 +44,24 @@ The full-chip LVS run compares the connectivity extracted from the `SoC6169` lay
 
 **Evidence:**
 
-- [Full-chip LVS log](../SoC6169-main/verification/lvs/lvs_run_chip_top/chip_top.log)
-- [Extracted layout netlist](../SoC6169-main/verification/lvs/lvs_run_chip_top/chip_top_extracted.cir)
+Re-run on 2026-11-09 with the renamed top cell `SoC6169` (KLayout 0.30.11, flat mode, PASS, 0 warnings, 0 errors):
+
+- [Full-chip LVS log](../SoC6169-main/verification/lvs/lvs_run_SoC6169/SoC6169.log)
+- [LVS runner summary](../SoC6169-main/verification/lvs/lvs_run_SoC6169/lvs_run_2026_11_09_15_59_03.log)
+- [Extracted layout netlist](../SoC6169-main/verification/lvs/lvs_run_SoC6169/SoC6169_extracted.cir)
+- [KLayout LVS database (gzip)](../SoC6169-main/verification/lvs/lvs_run_SoC6169/SoC6169.lvsdb.gz)
+
+
+See [SIGNOFF_MANIFEST.md](SIGNOFF_MANIFEST.md) for the input hashes of each run.
 
 ## Physical design and reference files
 
 | Design view | Repository file |
 | --- | --- |
 | Full-chip GDS (release) | [`SoC6169.gds`](../release/v.1.0.0/gds/SoC6169.gds) |
-| Full-chip GDS (workspace, top cell `chip_top`) | [`chip_top.gds`](../SoC6169-main/layout/klayout/chip_top.gds) |
+| Full-chip GDS (workspace copy) | [`SoC6169.gds`](../SoC6169-main/layout/klayout/SoC6169.gds) |
 | Full-chip LVS reference netlist (release) | [`SoC6169.spice`](../release/v.1.0.0/netlist/SoC6169.spice) |
-| Full-chip LVS reference netlist (workspace) | [`chip_top_lvs.spice`](../SoC6169-main/netlist/schematic/chip_top_lvs.spice) |
+| Full-chip LVS reference netlist (workspace copy) | [`SoC6169.spice`](../SoC6169-main/netlist/schematic/SoC6169.spice) |
 | Custom CAM macro GDS | [`COMPLETE_PROYECT_FIG.gds`](../SoC6169-main/layout/klayout/COMPLETE_PROYECT_FIG.gds) |
 | Custom CAM macro LVS reference netlist | [`COMPLETE_PROYECT_FIG_lvs.spice`](../SoC6169-main/netlist/schematic/COMPLETE_PROYECT_FIG_lvs.spice) |
 
@@ -64,7 +75,7 @@ The repository also preserves the individual CAM macro verification records:
 
 - [Project specification](Specification.md)
 - [Datasheet](Datasheet.md)
-- [Chip-level layout illustration](img/layout_chip_top.png)
+- [Chip-level layout illustration](img/layout_SoC6169.png)
 - [CAM macro layout illustration](img/layout_COMPLETE_PROYECT_FIG.png)
 - [Release notes](../release/v.1.0.0/ReleaseNote.md)
 

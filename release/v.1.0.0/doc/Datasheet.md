@@ -17,7 +17,7 @@ Approximate content-addressable memory (CAM) of 32 words × 32 bits with a progr
 | Core size | 415.39 µm × 367.22 µm ≈ 0.153 mm² (macro `COMPLETE_PROYECT_FIG`) |
 | Physical verification | full chip and core: DRC clean and LVS clean (IHP SG13CMOS5L KLayout decks) |
 
-![Chip layout](img/layout_chip_top.png)
+![Chip layout](img/layout_SoC6169.png)
 
 *Full chip `SoC6169`: pad ring, seal ring and fill around the CAM core.*
 
@@ -153,14 +153,14 @@ No setup or hold violations in any corner. One max-fanout warning in CAM_CONTROL
 
 | View | Check | Tool | Result |
 |---|---|---|---|
-| Full chip `SoC6169` | DRC | KLayout 0.30.11, IHP SG13CMOS5L deck, table `main` + maximum rule set, recommended rules enabled | 0 errors |
-| Full chip `SoC6169` | LVS | KLayout 0.30.11, IHP SG13CMOS5L deck, flat (forbidden-layer check passed), `SoC6169.gds` vs `SoC6169.spice` (release; workspace copies `chip_top.gds` / `chip_top_lvs.spice`) | Netlists match, 0 warnings, 0 errors |
+| Full chip `SoC6169` | DRC | KLayout 0.30.11, IHP SG13CMOS5L deck, table `main` + maximum rule set, recommended rules enabled (re-run 2026-11-09 with top cell `SoC6169`) | 0 errors |
+| Full chip `SoC6169` | LVS | KLayout 0.30.11, IHP SG13CMOS5L deck, flat (forbidden-layer check passed), `SoC6169.gds` vs `SoC6169.spice` (re-run 2026-11-09 with top cell `SoC6169`) | Netlists match, 0 warnings, 0 errors |
 | Core `COMPLETE_PROYECT_FIG` | DRC | KLayout 0.30.11, IHP SG13CMOS5L deck, table `main` + maximum rule set | 0 errors |
 | Core `COMPLETE_PROYECT_FIG` | LVS | KLayout 0.30.11, IHP SG13CMOS5L deck (forbidden-layer check passed), `COMPLETE_PROYECT_FIG.gds` vs `COMPLETE_PROYECT_FIG_lvs.spice` | Netlists match, 0 warnings |
 
 GDS files in `SoC6169-main/layout/klayout/`, netlists in `SoC6169-main/netlist/schematic/`, logs in `SoC6169-main/verification/drc/` and `SoC6169-main/verification/lvs/` (one `*_run_<top cell>/` folder per view). Schematic vs. layout netlist (netgen): `SoC6169-main/verification/netgen/` — circuits match uniquely.
 
-The chip-level LibreLane run (`SoC6169-main/librelane/chip_top/metrics.json`) also reports KLayout DRC 0, Netgen LVS 0 differences, 0 antenna violations (OpenROAD) and 0 power-grid violations.
+The chip-level LibreLane run (`SoC6169-main/librelane/SoC6169/metrics.json`) also reports KLayout DRC 0, Netgen LVS 0 differences, 0 antenna violations (OpenROAD) and 0 power-grid violations.
 
 ## 7. Limitations and notes
 

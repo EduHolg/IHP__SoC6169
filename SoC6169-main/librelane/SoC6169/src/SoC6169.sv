@@ -4,7 +4,7 @@
 
 `default_nettype none
 
-module chip_top #(
+module SoC6169 #(
     // Power/ground pads for core
     parameter NUM_VDD_PADS = 3,
     parameter NUM_VSS_PADS = 2,

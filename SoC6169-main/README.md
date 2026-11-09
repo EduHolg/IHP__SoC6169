@@ -30,9 +30,9 @@ The architecture supports investigation of approximate matching and time-domain 
 | --- | --- |
 | [`schematic/xschem/`](schematic/xschem/) | Xschem schematics and symbols for CAM cells, array, reference circuitry, and control-related blocks |
 | [`librelane/`](librelane/) | RTL sources, synthesis/implementation configurations, pin ordering, and metrics for the digital blocks |
-| [`librelane/chip_top/`](librelane/chip_top/) | `chip_core.sv`, `chip_top.sv`, the chip-level LibreLane configuration, SDC, and CAM/pad macro views |
+| [`librelane/SoC6169/`](librelane/SoC6169/) | `chip_core.sv`, `SoC6169.sv`, the chip-level LibreLane configuration, SDC, and CAM/pad macro views |
 | [`layout/klayout/`](layout/klayout/) | GDS views for the full-custom CAM macro and complete chip |
-| [`netlist/schematic/`](netlist/schematic/) | SPICE reference netlists, including `COMPLETE_PROYECT_FIG_lvs.spice` and `chip_top_lvs.spice`, and `chip_top.spice` (Magic extraction of the final GDS, used for chip-level simulation) |
+| [`netlist/schematic/`](netlist/schematic/) | SPICE reference netlists, including `COMPLETE_PROYECT_FIG_lvs.spice` and `SoC6169.spice` (full-chip LVS reference), and `SoC6169_magic.spice` (Magic extraction of the final GDS, used for chip-level simulation) |
 | [`testbenches/tran/`](testbenches/tran/) | Transient testbench schematics and stimulus files, including the chip-level six-row test (`ctrl_in6_top.spice`, `ser_in6_ref16_top.spice`, 3.3 V levels) |
 | [`testbenches/spectre/`](testbenches/spectre/) | Spectre simulation inputs and vector files |
 | [`verification/drc/`](verification/drc/) | KLayout DRC output for the CAM macro and chip top |
@@ -49,7 +49,7 @@ The directories under `librelane/` include:
 - `SHIFT_5/`
 - `REFERENCE_MUX/`
 - `OUTPUT/`
-- `chip_top/` — chip-level integration
+- `SoC6169/` — chip-level integration
 
 Each block's available RTL and build configuration are stored within its own directory. The presence of a metrics file does not by itself establish complete full-chip timing sign-off.
 
@@ -61,7 +61,7 @@ The existing chip integration uses:
 - **Documented die size:** 1200 × 1200 µm (1.44 mm²)
 - **Documented CAM macro size:** approximately 415.39 × 367.22 µm
 - **Core supply:** 1.2 V; **I/O supply:** 3.3 V
-- **Top GDS:** [`layout/klayout/chip_top.gds`](layout/klayout/chip_top.gds)
+- **Top GDS:** [`layout/klayout/SoC6169.gds`](layout/klayout/SoC6169.gds)
 - **CAM macro GDS:** [`layout/klayout/COMPLETE_PROYECT_FIG.gds`](layout/klayout/COMPLETE_PROYECT_FIG.gds)
 
 These dimensions are from the project documentation and are the same as the `sealring_x` / `sealring_y` values (1200 µm) recorded in `../doc/info.json`.
@@ -72,8 +72,8 @@ The repository contains DRC and LVS reports for both the CAM macro and integrate
 
 | Check | Report location | Current interpretation |
 | --- | --- | --- |
-| Full-chip DRC | [`verification/drc/drc_run_chip_top/`](verification/drc/drc_run_chip_top/) | Run reports no DRC violations |
-| Full-chip LVS | [`verification/lvs/lvs_run_chip_top/`](verification/lvs/lvs_run_chip_top/) | Run reports matching netlists |
+| Full-chip DRC | [`verification/drc/drc_run_SoC6169/`](verification/drc/drc_run_SoC6169/) | 2026-11-09, top cell `SoC6169`: no DRC violations |
+| Full-chip LVS | [`verification/lvs/lvs_run_SoC6169/`](verification/lvs/lvs_run_SoC6169/) | 2026-11-09, top cell `SoC6169`: netlists match |
 | CAM macro DRC | [`verification/drc/drc_run_COMPLETE_PROYECT_FIG/`](verification/drc/drc_run_COMPLETE_PROYECT_FIG/) | Supporting physical-verification run |
 | CAM macro LVS | [`verification/lvs/lvs_run_COMPLETE_PROYECT_FIG/`](verification/lvs/lvs_run_COMPLETE_PROYECT_FIG/) | Supporting netlist-comparison run |
 
@@ -89,7 +89,7 @@ Working design views belong in this `SoC6169-main/` directory. IHP's versioned f
 
 The relative paths to the final **files**, together with the technology, PDK commit, physical top cell, and actual seal-ring dimensions, must be recorded correctly in [`../doc/info.json`](../doc/info.json).
 
-**Naming note:** at the IHP maintainer's request, the release top cell and top-level files are named `SoC6169` (`release/v.1.0.0/gds/SoC6169.gds`, `release/v.1.0.0/netlist/SoC6169.spice`). In this implementation workspace the same layout keeps its original name `chip_top` (`layout/klayout/chip_top.gds`, `librelane/chip_top/`, verification runs `*_chip_top`). The two GDS files differ only in the root cell name record; geometry is identical (all-layer XOR = 0).
+**Naming note:** at the IHP maintainer's request, the top cell, the RTL top module, the LibreLane design and all top-level files are named `SoC6169`. The layout and LVS netlist in this workspace are byte-identical to the release copies.
 
 ## License
 

@@ -1,4 +1,4 @@
-* NGSPICE file created from chip_top.ext - technology: ihp-sg13cmos5l
+* NGSPICE file created from SoC6169.ext - technology: ihp-sg13cmos5l
 
 .subckt sg13cmos5l_decap_8 VSS VDD
 X0 VSS VDD VSS VSS sg13_lv_nmos ad=0.1428p pd=1.52u as=3.1269p ps=15.58u w=0.42u l=1u
@@ -18476,7 +18476,7 @@ X6384 a_50162_64782# D_uq37 VDD VDD sg13_lv_pmos ad=79.8f pd=0.8u as=0.1428p ps=
 X6385 a_75979_23253# Y_uq83 VDD VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.3808p ps=2.92u w=1.12u l=0.13u
 .ends
 
-.subckt chip_top VDD analog_PAD clk_PAD input_PAD[0] input_PAD[1] input_PAD[2] input_PAD[3]
+.subckt SoC6169 VDD analog_PAD clk_PAD input_PAD[0] input_PAD[1] input_PAD[2] input_PAD[3]
 + input_PAD[4] output_PAD rst_n_PAD IOVDD VSS
 Xsg13cmos5l_decap_8_808 VSS VDD sg13cmos5l_decap_8
 Xsg13cmos5l_decap_8_819 VSS VDD sg13cmos5l_decap_8

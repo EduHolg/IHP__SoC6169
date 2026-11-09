@@ -124,7 +124,7 @@ The reference settings allow the architecture to investigate Hamming-distance-ba
 
 ### Layout Preview
 
-![XPCAM full-chip layout](doc/img/layout_chip_top.png)
+![XPCAM full-chip layout](doc/img/layout_SoC6169.png)
 
 ## Design Status
 

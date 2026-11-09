@@ -19,9 +19,9 @@ meta:
     # Save time
     OpenROAD.IRDropReport: null
 
-DESIGN_NAME: chip_top
+DESIGN_NAME: SoC6169
 VERILOG_FILES:
-- dir::../src/chip_top.sv
+- dir::../src/SoC6169.sv
 - dir::../src/chip_core.sv
 
 VERILOG_DEFINES: [FUNCTIONAL]
@@ -67,9 +67,9 @@ PAD_SOUTH: [
 ]
 
 # SDC files
-PNR_SDC_FILE: dir::chip_top.sdc
-SIGNOFF_SDC_FILE: dir::chip_top.sdc
-FALLBACK_SDC: dir::chip_top.sdc
+PNR_SDC_FILE: dir::SoC6169.sdc
+SIGNOFF_SDC_FILE: dir::SoC6169.sdc
+FALLBACK_SDC: dir::SoC6169.sdc
 
 # Power / ground nets
 VDD_NETS:

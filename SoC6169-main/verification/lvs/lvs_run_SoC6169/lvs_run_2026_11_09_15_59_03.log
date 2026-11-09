@@ -1,0 +1,16 @@
+09-Nov-2026 16:59:03 | INFO    | Your Klayout version is: KLayout 0.30.11
+09-Nov-2026 16:59:03 | INFO    | Running SG13CMOS5L LVS checks on design /home/designer/shared/cam_5L/cam_chip_ihp_1p2mm/cam_chip_ihp/librelane/runs/chip_v10/final/gds/SoC6169/SoC6169.gds on cell SoC6169
+09-Nov-2026 17:09:34 | INFO    | ==============================================================================
+09-Nov-2026 17:09:34 | INFO    | Important Summary
+09-Nov-2026 17:09:34 | INFO    | +------------------+--------------------------------------------------------------+
+09-Nov-2026 17:09:34 | INFO    | | Status           | PASS                                                         |
+09-Nov-2026 17:09:34 | INFO    | | Mode             | COMPARE                                                      |
+09-Nov-2026 17:09:34 | INFO    | | Outcome          | Comparison mode: PASS (netlists match).                      |
+09-Nov-2026 17:09:34 | INFO    | | Layout           | SoC6169.gds                                                  |
+09-Nov-2026 17:09:34 | INFO    | | Top Cell         | SoC6169                                                      |
+09-Nov-2026 17:09:34 | INFO    | | Results Dir      | /home/designer/lvs_run_SoC6169_2026_11_09_16_59_03           |
+09-Nov-2026 17:09:34 | INFO    | | Warnings         | 0                                                            |
+09-Nov-2026 17:09:34 | INFO    | | Errors           | 0                                                            |
+09-Nov-2026 17:09:34 | INFO    | | Run Time (s)     | 631.43                                                       |
+09-Nov-2026 17:09:34 | INFO    | +------------------+--------------------------------------------------------------+
+09-Nov-2026 17:09:34 | INFO    | ==============================================================================
