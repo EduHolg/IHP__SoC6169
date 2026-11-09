@@ -11,15 +11,15 @@ Approximate content-addressable memory (CAM) of 32 words × 32 bits with a progr
 | Match rule | word matches if Hamming distance to the query ≤ threshold |
 | Threshold | programmed by writing the reference word (no ADC, no time-difference amplifier); characterized with VEVAL_IN = 0.5 V |
 | Interface | serial in (data and address), serial out (1 bit per row), 3 operation-enable pulses |
-| Pads (chip `chip_top`) | 19: 7 digital inputs, 1 digital output, 1 analog (VEVAL_IN), 3 VDD, 2 VSS, 3 IOVDD, 2 IOVSS |
+| Pads (chip `SoC6169`) | 19: 7 digital inputs, 1 digital output, 1 analog (VEVAL_IN), 3 VDD, 2 VSS, 3 IOVDD, 2 IOVSS |
 | Pins (core `COMPLETE_PROYECT_FIG`) | 11: 8 digital signals + 1 analog input VEVAL_IN + VDD + VSS |
-| Die size | 1200 µm × 1200 µm = 1.44 mm² (top cell `chip_top`, with pad ring and seal ring) |
+| Die size | 1200 µm × 1200 µm = 1.44 mm² (top cell `SoC6169`, with pad ring and seal ring) |
 | Core size | 415.39 µm × 367.22 µm ≈ 0.153 mm² (macro `COMPLETE_PROYECT_FIG`) |
 | Physical verification | full chip and core: DRC clean and LVS clean (IHP SG13CMOS5L KLayout decks) |
 
 ![Chip layout](img/layout_chip_top.png)
 
-*Full chip `chip_top`: pad ring, seal ring and fill around the CAM core.*
+*Full chip `SoC6169`: pad ring, seal ring and fill around the CAM core.*
 
 ![Core layout](img/layout_COMPLETE_PROYECT_FIG.png)
 
@@ -27,7 +27,7 @@ Approximate content-addressable memory (CAM) of 32 words × 32 bits with a progr
 
 ## 1. Pinout
 
-### 1.1 Chip pads (`chip_top`)
+### 1.1 Chip pads (`SoC6169`)
 
 | Pad | Side | IHP cell | Core pin | Notes |
 |---|---|---|---|---|
@@ -119,7 +119,7 @@ Because of the buffer delay, the effective threshold is below the number of diff
 
 Sequence: 6 writes, reference programming and one search with read-out (testbenches in `SoC6169-main/testbenches/`: `tran/` xschem/ngspice and `spectre/`). Query Q = `0x0000FFFF`, reference `0xFFF8FFFF` (19 bits).
 
-Chip-level stimuli (3.3 V levels, used with the `chip_top` netlist): `ctrl_in6_top.spice` and `ser_in6_ref16_top.spice` in `SoC6169-main/testbenches/tran/`. The chip-level run uses reference `0xFFFFFFFF` (16 bits) and gives the same expected outputs. The full operating procedure is in `doc/CAM_User_Guide.pdf`.
+Chip-level stimuli (3.3 V levels, used with the `SoC6169` netlist): `ctrl_in6_top.spice` and `ser_in6_ref16_top.spice` in `SoC6169-main/testbenches/tran/`. The chip-level run uses reference `0xFFFFFFFF` (16 bits) and gives the same expected outputs. The full operating procedure is in `doc/CAM_User_Guide.pdf`.
 
 | Row | Stored word | HD to Q | Expected | COMP / OUTPUT |
 |---|---|---|---|---|
@@ -153,8 +153,8 @@ No setup or hold violations in any corner. One max-fanout warning in CAM_CONTROL
 
 | View | Check | Tool | Result |
 |---|---|---|---|
-| Full chip `chip_top` | DRC | KLayout 0.30.11, IHP SG13CMOS5L deck, table `main` + maximum rule set, recommended rules enabled | 0 errors |
-| Full chip `chip_top` | LVS | KLayout 0.30.11, IHP SG13CMOS5L deck, flat (forbidden-layer check passed), `chip_top.gds` vs `chip_top_lvs.spice` | Netlists match, 0 warnings, 0 errors |
+| Full chip `SoC6169` | DRC | KLayout 0.30.11, IHP SG13CMOS5L deck, table `main` + maximum rule set, recommended rules enabled | 0 errors |
+| Full chip `SoC6169` | LVS | KLayout 0.30.11, IHP SG13CMOS5L deck, flat (forbidden-layer check passed), `SoC6169.gds` vs `SoC6169.spice` (release; workspace copies `chip_top.gds` / `chip_top_lvs.spice`) | Netlists match, 0 warnings, 0 errors |
 | Core `COMPLETE_PROYECT_FIG` | DRC | KLayout 0.30.11, IHP SG13CMOS5L deck, table `main` + maximum rule set | 0 errors |
 | Core `COMPLETE_PROYECT_FIG` | LVS | KLayout 0.30.11, IHP SG13CMOS5L deck (forbidden-layer check passed), `COMPLETE_PROYECT_FIG.gds` vs `COMPLETE_PROYECT_FIG_lvs.spice` | Netlists match, 0 warnings |
 
@@ -168,6 +168,6 @@ The chip-level LibreLane run (`SoC6169-main/librelane/chip_top/metrics.json`) al
 - The effective threshold depends on VEVAL_IN (characterized only at 0.5 V), on the delay of the reference buffer and on the programmed reference; lower thresholds give slower discharge and need a longer evaluation window (`T_EVAL_MIN_PS` in `CAM_CONTROL`).
 - The digital blocks were hardened without clock-tree synthesis (`RUN_CTS = false`).
 - The transistor-level simulations cover the core only; the pads (level shifters, ESD, the ≈ 587 Ω series resistor on VEVAL_IN) are not included.
-- The six-row test was also run on the `chip_top` netlist extracted with Magic from the final GDS (pads included, no interconnect parasitics).
+- The six-row test was also run on the `SoC6169` netlist extracted with Magic from the final GDS (pads included, no interconnect parasitics).
 - The pad named `rst_n_PAD` carries the active-high `reset` of the core.
 - The KLayout antenna check was disabled in the chip-level flow (IHP template default).

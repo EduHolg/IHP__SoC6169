@@ -3,7 +3,7 @@
 **Project:** Reconfigurable XPCAM-Based In-Memory Computing for Binary Neural Networks  
 **IP repository:** [IHP__SoC6169](https://github.com/EduHolg/IHP__SoC6169)  
 **Technology:** IHP SG13CMOS5L (130 nm)  
-**Design top cell:** `chip_top`  
+**Design top cell:** `SoC6169`  
 **Custom CAM macro:** `COMPLETE_PROYECT_FIG`  
 **Design and implementation:** Emilio Yanchapaxi  
 **Supervision:** Eduardo Holguín and Esteban Garzón  
@@ -19,14 +19,14 @@ Physical verification was performed using KLayout and the SG13CMOS5L verificatio
 
 | Verification | Design | Recorded result |
 | --- | --- | --- |
-| Design Rule Check (DRC) | `chip_top` | **PASS — no DRC violations reported** |
-| Layout Versus Schematic (LVS) | `chip_top` | **PASS — extracted layout and reference netlist match** |
+| Design Rule Check (DRC) | `SoC6169` | **PASS — no DRC violations reported** |
+| Layout Versus Schematic (LVS) | `SoC6169` | **PASS — extracted layout and reference netlist match** |
 
 These results summarize the archived full-chip verification logs stored in this repository.
 
 ### Design Rule Check (DRC)
 
-The DRC run checks the physical `chip_top` layout against the SG13CMOS5L technology rules. The archived main report records no DRC violations.
+The DRC run checks the physical `SoC6169` layout against the SG13CMOS5L technology rules. The archived main report records no DRC violations.
 
 **Evidence:**
 
@@ -36,7 +36,7 @@ The DRC run checks the physical `chip_top` layout against the SG13CMOS5L technol
 
 ### Layout Versus Schematic (LVS)
 
-The full-chip LVS run compares the connectivity extracted from the `chip_top` layout with the reference circuit netlist. The archived report records matching netlists.
+The full-chip LVS run compares the connectivity extracted from the `SoC6169` layout with the reference circuit netlist. The archived report records matching netlists.
 
 **Evidence:**
 
@@ -47,8 +47,10 @@ The full-chip LVS run compares the connectivity extracted from the `chip_top` la
 
 | Design view | Repository file |
 | --- | --- |
-| Full-chip GDS | [`chip_top.gds`](../SoC6169-main/layout/klayout/chip_top.gds) |
-| Full-chip LVS reference netlist | [`chip_top_lvs.spice`](../SoC6169-main/netlist/schematic/chip_top_lvs.spice) |
+| Full-chip GDS (release) | [`SoC6169.gds`](../release/v.1.0.0/gds/SoC6169.gds) |
+| Full-chip GDS (workspace, top cell `chip_top`) | [`chip_top.gds`](../SoC6169-main/layout/klayout/chip_top.gds) |
+| Full-chip LVS reference netlist (release) | [`SoC6169.spice`](../release/v.1.0.0/netlist/SoC6169.spice) |
+| Full-chip LVS reference netlist (workspace) | [`chip_top_lvs.spice`](../SoC6169-main/netlist/schematic/chip_top_lvs.spice) |
 | Custom CAM macro GDS | [`COMPLETE_PROYECT_FIG.gds`](../SoC6169-main/layout/klayout/COMPLETE_PROYECT_FIG.gds) |
 | Custom CAM macro LVS reference netlist | [`COMPLETE_PROYECT_FIG_lvs.spice`](../SoC6169-main/netlist/schematic/COMPLETE_PROYECT_FIG_lvs.spice) |
 
@@ -68,4 +70,4 @@ The repository also preserves the individual CAM macro verification records:
 
 ---
 
-**Verification summary:** The archived KLayout reports record a DRC-clean full-chip layout and a successful full-chip LVS comparison for `chip_top` in IHP SG13CMOS5L technology.
+**Verification summary:** The archived KLayout reports record a DRC-clean full-chip layout and a successful full-chip LVS comparison for `SoC6169` in IHP SG13CMOS5L technology.

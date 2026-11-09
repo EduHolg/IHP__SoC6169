@@ -27,7 +27,7 @@ The XPCAM design comprises three main subsystems:
 | Parameter | Design value |
 | --- | --- |
 | Process technology | IHP SG13CMOS5L, 130 nm |
-| Physical chip top cell | `chip_top` |
+| Physical chip top cell | `SoC6169` (named `chip_top` in the implementation workspace) |
 | Full-custom CAM macro | `COMPLETE_PROYECT_FIG` |
 | CAM organization | 32 × 32 bits |
 | Chip layout dimensions | 1200 µm × 1200 µm (1.44 mm²) |
@@ -41,9 +41,9 @@ The release is supported by the following design views in this repository:
 
 | Design view | Repository path |
 | --- | --- |
-| Full-chip GDS | [`SoC6169-main/layout/klayout/chip_top.gds`](../../SoC6169-main/layout/klayout/chip_top.gds) |
+| Full-chip GDS (release, top cell `SoC6169`) | [`gds/SoC6169.gds`](gds/SoC6169.gds) — workspace copy: [`chip_top.gds`](../../SoC6169-main/layout/klayout/chip_top.gds) |
 | Custom CAM macro GDS | [`SoC6169-main/layout/klayout/COMPLETE_PROYECT_FIG.gds`](../../SoC6169-main/layout/klayout/COMPLETE_PROYECT_FIG.gds) |
-| Full-chip LVS reference netlist | [`SoC6169-main/netlist/schematic/chip_top_lvs.spice`](../../SoC6169-main/netlist/schematic/chip_top_lvs.spice) |
+| Full-chip LVS reference netlist (release) | [`netlist/SoC6169.spice`](netlist/SoC6169.spice) — workspace copy: [`chip_top_lvs.spice`](../../SoC6169-main/netlist/schematic/chip_top_lvs.spice) |
 | Custom CAM schematics | [`SoC6169-main/schematic/xschem/`](../../SoC6169-main/schematic/xschem/) |
 | Digital logic and LibreLane configuration | [`SoC6169-main/librelane/`](../../SoC6169-main/librelane/) |
 | Simulation testbenches | [`SoC6169-main/testbenches/`](../../SoC6169-main/testbenches/) |
@@ -52,8 +52,8 @@ The release is supported by the following design views in this repository:
 
 Physical verification was performed using the SG13CMOS5L design flow. The archived full-chip results report:
 
-- **Design Rule Check (DRC):** No violations reported for `chip_top`.
-- **Layout Versus Schematic (LVS):** The extracted layout and reference netlist match for `chip_top`.
+- **Design Rule Check (DRC):** No violations reported for `SoC6169`.
+- **Layout Versus Schematic (LVS):** The extracted layout and reference netlist match for `SoC6169`.
 
 The corresponding logs are available in the repository under [`verification/drc/drc_run_chip_top/`](../../SoC6169-main/verification/drc/drc_run_chip_top/) and [`verification/lvs/lvs_run_chip_top/`](../../SoC6169-main/verification/lvs/lvs_run_chip_top/). Separate verification records for the full-custom CAM macro are also included.
 
@@ -61,10 +61,21 @@ The corresponding logs are available in the repository under [`verification/drc/
 
 | File | MD5 |
 | --- | --- |
-| `gds/chip_top.gds` | `a7abb9627286a2e852cd24cee3327f42` |
-| `netlist/chip_top_lvs.spice` | `fe9057fda00afe42f2db7b3036cb84cd` |
+| `gds/SoC6169.gds` | `a9cf2f0366718f3beb6f3c978495c219` |
+| `netlist/SoC6169.spice` | `66b82621d711b67b2907eb7335da4d35` |
 
 `doc/` contains the datasheet, the specification, the user guide (`CAM_User_Guide.pdf`) and the layout images.
+
+## Top-cell renaming (maintainer request)
+
+At the maintainer's request, the release top-level files and top cell were renamed from `chip_top` to `SoC6169`:
+
+- `gds/SoC6169.gds` was obtained from the verified `chip_top.gds` (MD5 `a7abb9627286a2e852cd24cee3327f42`) by changing only the root cell name record (STRNAME). 8 bytes differ; cell count (84), bounding box (0,0)–(1200,1200) µm and an all-layer XOR (0 differences) are identical.
+- `netlist/SoC6169.spice` is `chip_top_lvs.spice` (MD5 `fe9057fda00afe42f2db7b3036cb84cd`) with `.subckt/.ends chip_top` renamed to `SoC6169`. No device or net was changed.
+
+## Known annotation exception
+
+The sealring TEXT label (layer 63/0) reads `Calculated area: 1.4e-06 sq mm`. This is an annotation error from the sealring generator; the correct die area is 1200 µm × 1200 µm = **1.44 mm²**. The label is left unchanged to preserve the verified geometry.
 
 ## Documentation
 

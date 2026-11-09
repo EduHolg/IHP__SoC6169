@@ -59,7 +59,7 @@ A 2-input XNOR at the top level (`serial_in_data` ⊙ `REF_SEL` → data shift r
 | V_EVAL driver (top level) | Inverter MP0 (W = 15 µm, source and bulk on VEVAL_IN) / MN0 (W = 500 nm, to VSS). Input VEVAL1 from `CAM_CONTROL`, output VEVAL to the evaluation footers of the array and the reference row (0 V or ≈ 0.5 V). |
 | `ANALOG_FIGURE` | Analog top: array + reference + sense + comparator. |
 | `COMPLETE_PROYECT_FIG` | Core top: analog core + 6 digital blocks + XNOR + V_EVAL driver. Hard macro with 11 pins. |
-| `chip_top` | Chip top: `COMPLETE_PROYECT_FIG` + 19 IHP I/O pads + seal ring + fill (see §5.3). |
+| `SoC6169` | Chip top: `COMPLETE_PROYECT_FIG` + 19 IHP I/O pads + seal ring + fill (see §5.3). |
 
 ## 4. Control FSM
 
@@ -126,7 +126,7 @@ The core GDS is exported with its origin at (0, 0) and pin stubs on its edge (Me
 ## 6. Verification
 
 1. Each digital block verified separately at transistor level (address register + decoder, data register + reference MUX, control unit, full digital chain with emulated COMP).
-2. Full chip: Spectre transient, lv MOS models (same files in SG13G2 and SG13CMOS5L), TT, 1.2 V, VEVAL_IN = 0.5 V, 27 °C, 100 MHz, 0–3400 ns, eight consecutive operations (6 writes, reference 0xFFF8FFFF with 19 bits, search 0x0000FFFF + read). Testbenches: `SoC6169-main/testbenches/tran/COMPLETE_PROYECT_TB.sch` (xschem/ngspice) and `SoC6169-main/testbenches/spectre/` (Spectre) (see the README there). The same six-row test was also run at chip level on the Magic-extracted `chip_top` netlist (pads included, no interconnect parasitics, reference 0xFFFFFFFF, 16 bits) with `ctrl_in6_top.spice` and `ser_in6_ref16_top.spice`; see [CAM_User_Guide.pdf](CAM_User_Guide.pdf) for the operating procedure.
-3. Physical: DRC and LVS with the IHP SG13CMOS5L KLayout decks, all clean (LVS forbidden-layer check passed), on both views: the full chip with pad ring (`chip_top`) and the core (`COMPLETE_PROYECT_FIG`). Each digital block DRC/LVS/antenna clean in LibreLane.
+2. Full chip: Spectre transient, lv MOS models (same files in SG13G2 and SG13CMOS5L), TT, 1.2 V, VEVAL_IN = 0.5 V, 27 °C, 100 MHz, 0–3400 ns, eight consecutive operations (6 writes, reference 0xFFF8FFFF with 19 bits, search 0x0000FFFF + read). Testbenches: `SoC6169-main/testbenches/tran/COMPLETE_PROYECT_TB.sch` (xschem/ngspice) and `SoC6169-main/testbenches/spectre/` (Spectre) (see the README there). The same six-row test was also run at chip level on the Magic-extracted `SoC6169` netlist (pads included, no interconnect parasitics, reference 0xFFFFFFFF, 16 bits) with `ctrl_in6_top.spice` and `ser_in6_ref16_top.spice`; see [CAM_User_Guide.pdf](CAM_User_Guide.pdf) for the operating procedure.
+3. Physical: DRC and LVS with the IHP SG13CMOS5L KLayout decks, all clean (LVS forbidden-layer check passed), on both views: the full chip with pad ring (`SoC6169`) and the core (`COMPLETE_PROYECT_FIG`). Each digital block DRC/LVS/antenna clean in LibreLane.
 
 Results are summarized in [Datasheet.md](Datasheet.md).

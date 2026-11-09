@@ -38,7 +38,7 @@ The associated custom blocks include the reference circuitry, sensing inverters,
 
 Synthesizable digital logic manages addressing, serial data loading, reference configuration, write/search sequencing, and result readout. The repository includes modules such as `CAM_CONTROL`, `REFERENCE_MUX`, `SHIFT_5`, `decoder_5to32`, `shift_register_32`, and `OUTPUT`.
 
-The full-chip design, named **`chip_top`** in the physical layout, integrates the CAM macro, digital logic, I/O pads, and chip-level physical structures using LibreLane.
+The full-chip design, named **`SoC6169`** in the physical layout, integrates the CAM macro, digital logic, I/O pads, and chip-level physical structures using LibreLane.
 
 ## Macro Information
 
@@ -53,7 +53,7 @@ The full-chip design, named **`chip_top`** in the physical layout, integrates th
 | I/O supply | 3.3 V |
 | Documented full-chip dimensions | 1200 µm × 1200 µm (1.44 mm²) |
 | Documented custom CAM macro dimensions | 415.39 µm × 367.22 µm |
-| Physical top-level cell | `chip_top` |
+| Physical top-level cell | `SoC6169` |
 | Custom CAM macro | `COMPLETE_PROYECT_FIG` |
 
 The area and electrical values above describe the **design documentation**, not measured silicon characteristics. See the [datasheet](doc/Datasheet.md) and [specification](doc/Specification.md) for details.
@@ -75,7 +75,7 @@ The chip supports the following functional interface groups:
 
 ## Pad Ring
 
-19 bondpads of 70 × 70 µm. Coordinates are the pad centers in µm, origin at the lower-left corner of the die (`chip_top`, 1200 × 1200 µm).
+19 bondpads of 70 × 70 µm. Coordinates are the pad centers in µm, origin at the lower-left corner of the die (`SoC6169`, 1200 × 1200 µm).
 
 | # | Pad | Core pin | Side | x | y |
 | --- | --- | --- | --- | --- | --- |

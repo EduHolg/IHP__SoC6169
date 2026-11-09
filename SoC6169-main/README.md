@@ -9,7 +9,7 @@ The design combines a **32 × 32 content-addressable memory (CAM)** and programm
 - **IP repository:** [`IHP__SoC6169`](https://github.com/EduHolg/IHP__SoC6169)
 - **Design and implementation:** Emilio Yanchapaxi
 - **Supervisors:** Eduardo Holguín and Esteban Garzón
-- **Physical top-level layout:** `chip_top`
+- **Physical top-level layout:** `SoC6169`
 - **Full-custom CAM macro:** `COMPLETE_PROYECT_FIG`
 
 For the project overview, see the [root README](../README.md). For detailed specifications and interface information, see the [datasheet](../doc/Datasheet.md) and [specification](../doc/Specification.md). For operating the chip (power-up, protocol, threshold programming, functional test), see the [user guide](../doc/CAM_User_Guide.pdf).
@@ -20,7 +20,7 @@ The implementation is organized into three principal parts:
 
 1. **CAM array:** transistor-level 32 × 32 storage and comparison circuitry; key schematics include `CELL`, `WORD_32bits`, and `ARRAY_32x32`.
 2. **Reference and sensing:** programmable reference circuitry and comparison/sensing stages used to evaluate the CAM response; the assembled full-custom macro is `COMPLETE_PROYECT_FIG`.
-3. **Digital control and integration:** synthesizable controller, row decoder, shift-register, multiplexer, and output modules integrated with the CAM macro in `chip_top`.
+3. **Digital control and integration:** synthesizable controller, row decoder, shift-register, multiplexer, and output modules integrated with the CAM macro in `SoC6169`.
 
 The architecture supports investigation of approximate matching and time-domain comparison. The repository contains design and simulation evidence; no post-fabrication performance measurements are claimed.
 
@@ -89,7 +89,7 @@ Working design views belong in this `SoC6169-main/` directory. IHP's versioned f
 
 The relative paths to the final **files**, together with the technology, PDK commit, physical top cell, and actual seal-ring dimensions, must be recorded correctly in [`../doc/info.json`](../doc/info.json).
 
-**Naming note:** the generated IP identifier is `SoC6169`, while the present physical top-level cell is `chip_top`. Confirm IHP's expected naming conventions before making the release immutable; do not rename a GDS cell or reference netlist solely for cosmetic consistency.
+**Naming note:** at the IHP maintainer's request, the release top cell and top-level files are named `SoC6169` (`release/v.1.0.0/gds/SoC6169.gds`, `release/v.1.0.0/netlist/SoC6169.spice`). In this implementation workspace the same layout keeps its original name `chip_top` (`layout/klayout/chip_top.gds`, `librelane/chip_top/`, verification runs `*_chip_top`). The two GDS files differ only in the root cell name record; geometry is identical (all-layer XOR = 0).
 
 ## License
 
